@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/offline.css">
     <style>
       .swiper-container {
@@ -44,7 +48,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container" id="page">
+    <div class="container">
         <header class="backToHome">
           <div style="display: flex; justify-content: space-between">
             <a
@@ -95,11 +99,11 @@
             <div class="image-gallery-content bottom">
                 <div class="image-gallery-bullets" style="padding-top: 50px; position: relative;">
                 <div class="image-gallery-bullets-container">
-                    <button type="button" class="image-gallery-bullet active"></button>
-                    <button type="button" class="image-gallery-bullet "></button>
-                    <button type="button" class="image-gallery-bullet "></button>
-                    <button type="button" class="image-gallery-bullet "></button>
-                    <button type="button" class="image-gallery-bullet "></button>
+                    <button type="button" id="bullet1" class="image-gallery-bullet active"></button>
+                    <button type="button" id="bullet2" class="image-gallery-bullet "></button>
+                    <button type="button" id="bullet3" class="image-gallery-bullet "></button>
+                    <button type="button" id="bullet4" class="image-gallery-bullet "></button>
+                    <button type="button" id="bullet5" class="image-gallery-bullet "></button>
                 </div>
             </div>
         </div>
@@ -227,8 +231,10 @@
               <table style="width: 100%;">
                 <tr>
                     <td style="width: 50%;">
-                        <div class="conservationTitle" style="padding-left:20px;position: absolute;">Conservation Status</div>
-                        <div class="underlinepg2" style="padding-top:45px;float: left;position: absolute;margin-left: 20px;"></div>
+                      <p style="position: relative;padding-left: 20px; color: white; padding-top: 80px;font-style: normal;
+                      font-weight: 500;
+                      font-size: 32px;">Conservation Status</p>
+                        <div class="underlinepg2" style="float: left;position: absolute;margin-left: 20px;margin-top: -30px;"></div>
 
                         <table class="circletable" style="padding-top:50px;">
                             <thead>
@@ -315,7 +321,7 @@
                         <div class="conservationTitle" >Geographical Location</div>
                         <div class="underlinepg2" ></div>
                         <div class="extraspacepg1"></div>
-                        <img src="Unicornfish Map.png" style="padding-top: 50px;">
+                        <img src="../assets/images/Unicornfish Map.png" style="padding-top: 50px;">
                         <figcaption>
                             <div class="geo">
                                 <div class="col-sm-2" style="padding-top: 13px">
@@ -343,38 +349,18 @@
                 </tr>
               </table>
               <div style="display: flex; flex-direction: row; width: 100%; justify-content: center;">
-                <div class="arrowback" style="margin-left: 10px;" ><a href="sweetlips.html"><img src="../assets/images/left-arrow.png" style="width: 30px;padding-top: 10px;"> </a></div>
+                <div class="arrowback" style="margin-left: 10px;" ><a href="../screens/sweetlips.html"><img src="../assets/images/left-arrow.png" style="width: 30px;padding-top: 10px;"> </a></div>
                 
-                <div class="arrowback" style="margin-left: 10px;" ><a href="surgeon.html"><img src="../assets/images/right-arrow.png" style="width: 30px;padding-top: 10px;"> </a></div>
+                <div class="arrowback" style="margin-left: 10px;" ><a href="../screens/surgeon.html"><img src="../assets/images/right-arrow.png" style="width: 30px;padding-top: 10px;"> </a></div>
             </div>
         </div>
     </center>
     </div>
-    <div id="loading"></div>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    
-<script>
-
-function onReady(callback) {
-    var intervalID = window.setInterval(checkReady, 500);
-
-    function checkReady() {
-        if (document.getElementsByTagName('body')[0] !== undefined) {
-            window.clearInterval(intervalID);
-            callback.call(this);
-        }
-    }
-}
-
-function show(id, value) {
-    document.getElementById(id).style.display = value ? 'block' : 'none';
-}
-
-onReady(function () {
-    show('page', true);
-    show('loading', false);
-});
+    <!-- Initialize Swiper -->
+    <script>
       var swipe = new Swiper(".mySwiper", {
         pagination: {
           el: ".swiper-pagination",
@@ -383,10 +369,72 @@ onReady(function () {
 
       var swiper = new Swiper('.swiper-container');
       swiper.on('slideChange', function () {
+        if(this.activeIndex === 0) {
+          document.getElementById("bullet1").className = "image-gallery-bullet active";
+          document.getElementById("bullet2").className = "image-gallery-bullet ";
+          document.getElementById("bullet3").className = "image-gallery-bullet ";
+          document.getElementById("bullet4").className = "image-gallery-bullet ";
+          document.getElementById("bullet5").className = "image-gallery-bullet ";
+
+          // let v = document.getElementById("bullet1");
+          //   v.className += "active";
+          console.log("IM ON SECOND SLIDE!");
+        }
         if(this.activeIndex === 1) {
+          document.getElementById("bullet1").className = "image-gallery-bullet ";
+          document.getElementById("bullet2").className = "image-gallery-bullet active";
+          document.getElementById("bullet3").className = "image-gallery-bullet ";
+          document.getElementById("bullet4").className = "image-gallery-bullet ";
+          document.getElementById("bullet5").className = "image-gallery-bullet ";
+          
+          // let v = document.getElementById("bullet2");
+          //   v.className += "active";
+          console.log("IM ON SECOND SLIDE!");
+        }
+        if(this.activeIndex === 2) {
+          // let v = document.getElementById("bullet3");
+          //   v.className += "active";
+          document.getElementById("bullet1").className = "image-gallery-bullet ";
+          document.getElementById("bullet2").className = "image-gallery-bullet ";
+          document.getElementById("bullet3").className = "image-gallery-bullet active";
+          document.getElementById("bullet4").className = "image-gallery-bullet ";
+          document.getElementById("bullet5").className = "image-gallery-bullet ";
+          
+          console.log("IM ON SECOND SLIDE!");
+        }
+        if(this.activeIndex === 3) {
+          // let v = document.getElementById("bullet3");
+          //   v.className += "active";
+          document.getElementById("bullet1").className = "image-gallery-bullet ";
+          document.getElementById("bullet2").className = "image-gallery-bullet ";
+          document.getElementById("bullet3").className = "image-gallery-bullet ";
+          document.getElementById("bullet4").className = "image-gallery-bullet active";
+          document.getElementById("bullet5").className = "image-gallery-bullet ";
+          
+          console.log("IM ON SECOND SLIDE!");
+        }
+        if(this.activeIndex === 4) {
+          // let v = document.getElementById("bullet3");
+          //   v.className += "active";
+          document.getElementById("bullet1").className = "image-gallery-bullet ";
+          document.getElementById("bullet2").className = "image-gallery-bullet ";
+          document.getElementById("bullet3").className = "image-gallery-bullet ";
+          document.getElementById("bullet4").className = "image-gallery-bullet ";
+          document.getElementById("bullet5").className = "image-gallery-bullet active";
+          
           console.log("IM ON SECOND SLIDE!");
         }
       });
-      </script>
+
+      var header = document.getElementById("bullets");
+      var btns = header.getElementsByClassName("image-gallery-bullet");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+        });
+      }
+    </script>
 </body>
 </html>

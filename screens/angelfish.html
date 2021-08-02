@@ -82,7 +82,6 @@
           </div>
         </header>
 
-        <div class="extraspace"></div>
         <center>
         <div>
           <div class="swiper-container">
@@ -97,9 +96,9 @@
             <div class="image-gallery-content bottom">
                 <div class="image-gallery-bullets" style="padding-top: 50px; position: relative;">
                 <div class="image-gallery-bullets-container" id="bullets">
-                    <button type="button" class="image-gallery-bullet active"></button>
-                    <button type="button" class="image-gallery-bullet "></button>
-                    <button type="button" class="image-gallery-bullet "></button>
+                  <button type="button" id="bullet1" class="image-gallery-bullet active"></button>
+                  <button type="button" id="bullet2" class="image-gallery-bullet "></button>
+                  <button type="button" id="bullet3" class="image-gallery-bullet "></button>
                 </div>
             </div>
         </div>
@@ -107,11 +106,11 @@
                 <div class="image-gallery-thumbnails">
                     <div class="image-gallery-thumbnails-container" style="-webkit-transform:translate3d(0px, 0, 0);-moz-transform:translate3d(0px, 0, 0);-ms-transform:translate3d(0px, 0, 0);-o-transform:translate3d(0px, 0, 0);transform:translate3d(0px, 0, 0)">
                         <button type="button" class="image-gallery-thumbnail active" style="width: 150px;height: 90px;">
-                            <a href="angelfish.html">
+                            
                             <div class="image-gallery-thumbnail-inner">
                                 <img class="image-gallery-thumbnail-image" src="../assets/images/Bicolour Angelfish.png">
                             </div>
-                        </a>
+                      
                         </button>
                         <button type="button" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
                             <!-- <a href="angelfish2.html"> -->
@@ -121,11 +120,11 @@
                         <!-- </a> -->
                         </button>
                         <button type="button" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
-                            <a href="angelfish3.html">
+                           
                             <div class="image-gallery-thumbnail-inner">
                                 <img class="image-gallery-thumbnail-image" src="../assets/images/Bluering Angelfish.png">
                             </div>
-                        </a>
+                   
                         </button>
                     </div>
                 </div>
@@ -357,7 +356,29 @@
 
       var swiper = new Swiper('.swiper-container');
       swiper.on('slideChange', function () {
+        if(this.activeIndex === 0) {
+          document.getElementById("bullet1").className = "image-gallery-bullet active";
+          document.getElementById("bullet2").className = "image-gallery-bullet ";
+          document.getElementById("bullet3").className = "image-gallery-bullet ";
+          // let v = document.getElementById("bullet1");
+          //   v.className += "active";
+          console.log("IM ON SECOND SLIDE!");
+        }
         if(this.activeIndex === 1) {
+          document.getElementById("bullet1").className = "image-gallery-bullet ";
+          document.getElementById("bullet2").className = "image-gallery-bullet active";
+          document.getElementById("bullet3").className = "image-gallery-bullet ";
+
+          // let v = document.getElementById("bullet2");
+          //   v.className += "active";
+          console.log("IM ON SECOND SLIDE!");
+        }
+        if(this.activeIndex === 2) {
+          // let v = document.getElementById("bullet3");
+          //   v.className += "active";
+          document.getElementById("bullet1").className = "image-gallery-bullet ";
+          document.getElementById("bullet2").className = "image-gallery-bullet ";
+          document.getElementById("bullet3").className = "image-gallery-bullet active";
           console.log("IM ON SECOND SLIDE!");
         }
       });

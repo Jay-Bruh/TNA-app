@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/offline.css">
     <style>
       .swiper-container {
@@ -44,7 +48,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container" id="page">
+    <div class="container">
         <header class="backToHome">
           <div style="display: flex; justify-content: space-between">
             <a
@@ -91,9 +95,9 @@
             <div class="image-gallery-content bottom">
                 <div class="image-gallery-bullets" style="padding-top: 50px; position: relative;">
                 <div class="image-gallery-bullets-container">
-                    <button type="button" class="image-gallery-bullet active"></button>
-                    <button type="button" class="image-gallery-bullet "></button>
-                    <button type="button" class="image-gallery-bullet "></button>
+                  <button type="button" id="bullet1" class="image-gallery-bullet active"></button>
+                  <button type="button" id="bullet2" class="image-gallery-bullet "></button>
+                  <button type="button" id="bullet3" class="image-gallery-bullet "></button>
                 </div>
             </div>
         </div>
@@ -101,25 +105,25 @@
                 <div class="image-gallery-thumbnails">
                     <div class="image-gallery-thumbnails-container" style="-webkit-transform:translate3d(0px, 0, 0);-moz-transform:translate3d(0px, 0, 0);-ms-transform:translate3d(0px, 0, 0);-o-transform:translate3d(0px, 0, 0);transform:translate3d(0px, 0, 0)">
                         <button type="button" class="image-gallery-thumbnail active" style="width: 150px;height: 90px;">
-                            <a href="sweetlips.html">
+                            
                             <div class="image-gallery-thumbnail-inner">
                                 <img class="image-gallery-thumbnail-image" src="../assets/images/Harlequin Sweetlips.png">
                             </div>
-                            </a>
+                           
                         </button>
                         <button type="button" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
-                            <a href="sweetlips2.html">
+                            
                             <div class="image-gallery-thumbnail-inner">
                                 <img class="image-gallery-thumbnail-image" src="../assets/images/Oriental Sweetlips.png">
                             </div>
-                            </a>
+                           
                         </button>
                         <button type="button" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
-                            <a href="sweetlips3.html">
+                            
                             <div class="image-gallery-thumbnail-inner">
                                 <img class="image-gallery-thumbnail-image" src="../assets/images/Yellow-banded Sweetlips.png">
                             </div>
-                            </a>
+                           
                         </button>
                     </div>
                 </div>
@@ -216,8 +220,10 @@
               <table style="width: 100%;">
                 <tr>
                     <td style="width: 50%;">
-                        <div class="conservationTitle" style="padding-left:20px;position: absolute;">Conservation Status</div>
-                        <div class="underlinepg2" style="padding-top:45px;float: left;position: absolute;margin-left: 20px;"></div>
+                      <p style="position: relative;padding-left: 20px; color: white; padding-top: 80px;font-style: normal;
+                      font-weight: 500;
+                      font-size: 32px;">Conservation Status</p>
+                        <div class="underlinepg2" style="float: left;position: absolute;margin-left: 20px;margin-top: -30px;"></div>
 
                         <table class="circletable" style="padding-top:50px;">
                             <thead>
@@ -340,11 +346,10 @@
     </center>
     </div>
 
-    <div id="loading"></div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    
-<script>
+    <!-- Initialize Swiper -->
+    <script>
 
 function onReady(callback) {
     var intervalID = window.setInterval(checkReady, 500);
@@ -373,7 +378,29 @@ onReady(function () {
 
       var swiper = new Swiper('.swiper-container');
       swiper.on('slideChange', function () {
+        if(this.activeIndex === 0) {
+          document.getElementById("bullet1").className = "image-gallery-bullet active";
+          document.getElementById("bullet2").className = "image-gallery-bullet ";
+          document.getElementById("bullet3").className = "image-gallery-bullet ";
+          // let v = document.getElementById("bullet1");
+          //   v.className += "active";
+          console.log("IM ON SECOND SLIDE!");
+        }
         if(this.activeIndex === 1) {
+          document.getElementById("bullet1").className = "image-gallery-bullet ";
+          document.getElementById("bullet2").className = "image-gallery-bullet active";
+          document.getElementById("bullet3").className = "image-gallery-bullet ";
+          
+          // let v = document.getElementById("bullet2");
+          //   v.className += "active";
+          console.log("IM ON SECOND SLIDE!");
+        }
+        if(this.activeIndex === 2) {
+          // let v = document.getElementById("bullet3");
+          //   v.className += "active";
+          document.getElementById("bullet1").className = "image-gallery-bullet ";
+          document.getElementById("bullet2").className = "image-gallery-bullet ";
+          document.getElementById("bullet3").className = "image-gallery-bullet active";
           console.log("IM ON SECOND SLIDE!");
         }
       });
