@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/offline.css">
+    <link rel="stylesheet" href="../css/offline.css">
     
     <title>Document</title>
 </head>
@@ -13,7 +13,7 @@
         <header class="backToHome">
             <div style="width: 100%;">
                 <a href="../index.html">
-                <img src="../../assets/icons/HomeIcon.svg" style="padding: 15px;">
+                <img src="../assets/icons/HomeIcon.svg" style="padding: 15px;">
             </a>
                 <div
             class="roundedCornersBox"
@@ -126,74 +126,92 @@
                             <thead>
                               <tr>
                                 <th class="conservationStatusTH" style="display: flex;flex-direction: row;">
+                                  <p id="c1" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: -30px;color: white;">Near Extinction</p>
                                     <div class="circ circ-on">
                                         <div
                                           class="conservationStatusTitle circletext"
-                                          style="font-weight: 700;"                                           
+                                          style="font-weight: 700;"  
+                                          onclick="button1()"                                         
                                         >                                          
                                           NE
                                         </div>
                                     </div>
+                                    <p id="c2" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 10px;color: white;">Data Deficient</p>
                                     <div class="circ">
                                         <div
                                           class="conservationStatusTitle circletext"
-                                          style="font-weight: 700;"                                           
+                                          style="font-weight: 700;" 
+                                          onclick="button2()"                                           
                                         >                                          
                                           DD
                                         </div>
                                     </div>
+                                    <p id="c3" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 50px;color: white;">Least Concern</p>
                                     <div class="circ">
                                         <div
                                           class="conservationStatusTitle circletext"
-                                          style="font-weight: 700;"                                           
+                                          style="font-weight: 700;" 
+                                          onclick="button3()"                                           
                                         >                                          
                                           LC
                                         </div>
                                     </div>
+                                    <p id="c4" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 90px;color: white;">Near Threatend</p>
                                     <div class="circ">
                                         <div
                                           class="conservationStatusTitle circletext"
-                                          style="font-weight: 700;"                                           
+                                          style="font-weight: 700;"  
+                                          onclick="button4()"                                          
                                         >                                          
                                           NT
                                         </div>
                                     </div>
+                                    <p id="c5" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 170px;color: white;">Vulnerable</p>
                                     <div class="circ">
                                         <div
                                           class="conservationStatusTitle circletext"
-                                          style="font-weight: 700;"                                           
+                                          style="font-weight: 700;"  
+                                          onclick="button5()"                                          
                                         >                                          
                                           VU
                                         </div>
                                     </div>
+                                    <p id="c6" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Endangered</p>
                                     <div class="circ">
                                         <div
                                           class="conservationStatusTitle circletext"
-                                          style="font-weight: 700;"                                           
+                                          style="font-weight: 700;"    
+                                          onclick="button6()"                                        
                                         >                                          
                                           EN
                                         </div>
                                     </div>
+                                    <p id="c7" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Critically Endangered</p>
                                     <div class="circ">
                                         <div
                                           class="conservationStatusTitle circletext"
-                                          style="font-weight: 700;"                                           
+                                          style="font-weight: 700;"  
+                                          onclick="button7()"                                          
                                         >                                          
                                           CR
                                         </div>
                                     </div>
+                                    <p id="c8" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 270px;color: white;">Extinct in the Wild</p>
                                     <div class="circ">
                                         <div
                                           class="conservationStatusTitle circletext"
-                                          style="font-weight: 700;"                                           
+                                          style="font-weight: 700;"
+                                          onclick="button8()"                                            
                                         >                                          
                                           EW
                                         </div>
                                     </div>
+                                    <p id="c9" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 370px;color: white;">Extinct</p>
                                     <div class="circ">
                                         <div
                                           class="conservationStatusTitle circletext"
-                                          style="font-weight: 700;"                                           
+                                          style="font-weight: 700;"
+                                          onclick="button9()"                                            
                                         >                                          
                                           EX
                                         </div>
@@ -245,6 +263,106 @@
 
 <div id="loading"></div>
 <script>
+
+  function button1(){
+    document.getElementById("c1").style.visibility='visible';
+    document.getElementById("c2").style.visibility='hidden';
+    document.getElementById("c3").style.visibility='hidden';
+    document.getElementById("c4").style.visibility='hidden';
+    document.getElementById("c5").style.visibility='hidden';
+    document.getElementById("c6").style.visibility='hidden';
+    document.getElementById("c7").style.visibility='hidden';
+    document.getElementById("c8").style.visibility='hidden';
+    document.getElementById("c9").style.visibility='hidden';
+  }
+  function button2(){
+    document.getElementById("c1").style.visibility='hidden';
+    document.getElementById("c2").style.visibility='visible';
+    document.getElementById("c3").style.visibility='hidden';
+    document.getElementById("c4").style.visibility='hidden';
+    document.getElementById("c5").style.visibility='hidden';
+    document.getElementById("c6").style.visibility='hidden';
+    document.getElementById("c7").style.visibility='hidden';
+    document.getElementById("c8").style.visibility='hidden';
+    document.getElementById("c9").style.visibility='hidden';
+  }
+  function button3(){
+    document.getElementById("c1").style.visibility='hidden';
+    document.getElementById("c2").style.visibility='hidden';
+    document.getElementById("c3").style.visibility='visible';
+    document.getElementById("c4").style.visibility='hidden';
+    document.getElementById("c5").style.visibility='hidden';
+    document.getElementById("c6").style.visibility='hidden';
+    document.getElementById("c7").style.visibility='hidden';
+    document.getElementById("c8").style.visibility='hidden';
+    document.getElementById("c9").style.visibility='hidden';
+  }
+  function button4(){
+    document.getElementById("c1").style.visibility='hidden';
+    document.getElementById("c2").style.visibility='hidden';
+    document.getElementById("c3").style.visibility='hidden';
+    document.getElementById("c4").style.visibility='visible';
+    document.getElementById("c5").style.visibility='hidden';
+    document.getElementById("c6").style.visibility='hidden';
+    document.getElementById("c7").style.visibility='hidden';
+    document.getElementById("c8").style.visibility='hidden';
+    document.getElementById("c9").style.visibility='hidden';
+  }
+  function button5(){
+    document.getElementById("c1").style.visibility='hidden';
+    document.getElementById("c2").style.visibility='hidden';
+    document.getElementById("c3").style.visibility='hidden';
+    document.getElementById("c4").style.visibility='hidden';
+    document.getElementById("c5").style.visibility='visible';
+    document.getElementById("c6").style.visibility='hidden';
+    document.getElementById("c7").style.visibility='hidden';
+    document.getElementById("c8").style.visibility='hidden';
+    document.getElementById("c9").style.visibility='hidden';
+  }
+  function button6(){
+    document.getElementById("c1").style.visibility='hidden';
+    document.getElementById("c2").style.visibility='hidden';
+    document.getElementById("c3").style.visibility='hidden';
+    document.getElementById("c4").style.visibility='hidden';
+    document.getElementById("c5").style.visibility='hidden';
+    document.getElementById("c6").style.visibility='visible';
+    document.getElementById("c7").style.visibility='hidden';
+    document.getElementById("c8").style.visibility='hidden';
+    document.getElementById("c9").style.visibility='hidden';
+  }
+  function button7(){
+    document.getElementById("c1").style.visibility='hidden';
+    document.getElementById("c2").style.visibility='hidden';
+    document.getElementById("c3").style.visibility='hidden';
+    document.getElementById("c4").style.visibility='hidden';
+    document.getElementById("c5").style.visibility='hidden';
+    document.getElementById("c6").style.visibility='hidden';
+    document.getElementById("c7").style.visibility='visible';
+    document.getElementById("c8").style.visibility='hidden';
+    document.getElementById("c9").style.visibility='hidden';
+  }
+  function button8(){
+    document.getElementById("c1").style.visibility='hidden';
+    document.getElementById("c2").style.visibility='hidden';
+    document.getElementById("c3").style.visibility='hidden';
+    document.getElementById("c4").style.visibility='hidden';
+    document.getElementById("c5").style.visibility='hidden';
+    document.getElementById("c6").style.visibility='hidden';
+    document.getElementById("c7").style.visibility='hidden';
+    document.getElementById("c8").style.visibility='visible';
+    document.getElementById("c9").style.visibility='hidden';
+  }
+  function button9(){
+    document.getElementById("c1").style.visibility='hidden';
+    document.getElementById("c2").style.visibility='hidden';
+    document.getElementById("c3").style.visibility='hidden';
+    document.getElementById("c4").style.visibility='hidden';
+    document.getElementById("c5").style.visibility='hidden';
+    document.getElementById("c6").style.visibility='hidden';
+    document.getElementById("c7").style.visibility='hidden';
+    document.getElementById("c8").style.visibility='hidden';
+    document.getElementById("c9").style.visibility='visible';
+  }
 
 function onReady(callback) {
     var intervalID = window.setInterval(checkReady, 500);

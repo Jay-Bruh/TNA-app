@@ -9,7 +9,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      href="../assets/swiper/swiper-bundle.min.css"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/offline.css">
@@ -106,21 +106,21 @@
           <div class="image-gallery-thumbnails-wrapper bottom">
               <div class="image-gallery-thumbnails">
                   <div class="image-gallery-thumbnails-container" style="-webkit-transform:translate3d(0px, 0, 0);-moz-transform:translate3d(0px, 0, 0);-ms-transform:translate3d(0px, 0, 0);-o-transform:translate3d(0px, 0, 0);transform:translate3d(0px, 0, 0)">
-                      <button type="button" class="image-gallery-thumbnail active" style="width: 150px;height: 90px;">
+                      <button type="button" id="thumb1" class="image-gallery-thumbnail active" style="width: 150px;height: 90px;">
 
                           <div class="image-gallery-thumbnail-inner">
                               <img class="image-gallery-thumbnail-image" src="../assets/images/Clown Triggerfish.png">
                           </div>
                    
                       </button>
-                      <button type="button" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+                      <button type="button" id="thumb2" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
                    
                           <div class="image-gallery-thumbnail-inner">
                               <img class="image-gallery-thumbnail-image" src="../assets/images/Guineafowl Puffer.png">
                           </div>
                    
                       </button>
-                      <button type="button" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+                      <button type="button" id="thumb3" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
                   
                           <div class="image-gallery-thumbnail-inner">
                               <img class="image-gallery-thumbnail-image" src="../assets/images/Starry Puffer.png">
@@ -231,79 +231,97 @@
                           <thead>
                             <tr>
                               <th class="conservationStatusTH" style="display: flex;flex-direction: row;">
-                                  <div class="circ circ-on">
-                                      <div
-                                        class="conservationStatusTitle circletext"
-                                        style="font-weight: 700;"                                           
-                                      >                                          
-                                        NE
-                                      </div>
-                                  </div>
-                                  <div class="circ">
-                                      <div
-                                        class="conservationStatusTitle circletext"
-                                        style="font-weight: 700;"                                           
-                                      >                                          
-                                        DD
-                                      </div>
-                                  </div>
-                                  <div class="circ">
-                                      <div
-                                        class="conservationStatusTitle circletext"
-                                        style="font-weight: 700;"                                           
-                                      >                                          
-                                        LC
-                                      </div>
-                                  </div>
-                                  <div class="circ">
-                                      <div
-                                        class="conservationStatusTitle circletext"
-                                        style="font-weight: 700;"                                           
-                                      >                                          
-                                        NT
-                                      </div>
-                                  </div>
-                                  <div class="circ">
-                                      <div
-                                        class="conservationStatusTitle circletext"
-                                        style="font-weight: 700;"                                           
-                                      >                                          
-                                        VU
-                                      </div>
-                                  </div>
-                                  <div class="circ">
-                                      <div
-                                        class="conservationStatusTitle circletext"
-                                        style="font-weight: 700;"                                           
-                                      >                                          
-                                        EN
-                                      </div>
-                                  </div>
-                                  <div class="circ">
-                                      <div
-                                        class="conservationStatusTitle circletext"
-                                        style="font-weight: 700;"                                           
-                                      >                                          
-                                        CR
-                                      </div>
-                                  </div>
-                                  <div class="circ">
-                                      <div
-                                        class="conservationStatusTitle circletext"
-                                        style="font-weight: 700;"                                           
-                                      >                                          
-                                        EW
-                                      </div>
-                                  </div>
-                                  <div class="circ">
-                                      <div
-                                        class="conservationStatusTitle circletext"
-                                        style="font-weight: 700;"                                           
-                                      >                                          
-                                        EX
-                                      </div>
-                                  </div>
-                          </th>
+                                <p id="c1" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: -30px;color: white;">Near Extinction</p>
+                                <div class="circ circ-on">
+                                    <div
+                                      class="conservationStatusTitle circletext"
+                                      style="font-weight: 700;"  
+                                      onclick="button1()"                                         
+                                    >                                          
+                                      NE
+                                    </div>
+                                </div>
+                                <p id="c2" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 10px;color: white;">Data Deficient</p>
+                                <div class="circ">
+                                    <div
+                                      class="conservationStatusTitle circletext"
+                                      style="font-weight: 700;" 
+                                      onclick="button2()"                                           
+                                    >                                          
+                                      DD
+                                    </div>
+                                </div>
+                                <p id="c3" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 50px;color: white;">Least Concern</p>
+                                <div class="circ">
+                                    <div
+                                      class="conservationStatusTitle circletext"
+                                      style="font-weight: 700;" 
+                                      onclick="button3()"                                           
+                                    >                                          
+                                      LC
+                                    </div>
+                                </div>
+                                <p id="c4" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 90px;color: white;">Near Threatend</p>
+                                <div class="circ">
+                                    <div
+                                      class="conservationStatusTitle circletext"
+                                      style="font-weight: 700;"  
+                                      onclick="button4()"                                          
+                                    >                                          
+                                      NT
+                                    </div>
+                                </div>
+                                <p id="c5" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 170px;color: white;">Vulnerable</p>
+                                <div class="circ">
+                                    <div
+                                      class="conservationStatusTitle circletext"
+                                      style="font-weight: 700;"  
+                                      onclick="button5()"                                          
+                                    >                                          
+                                      VU
+                                    </div>
+                                </div>
+                                <p id="c6" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Endangered</p>
+                                <div class="circ">
+                                    <div
+                                      class="conservationStatusTitle circletext"
+                                      style="font-weight: 700;"    
+                                      onclick="button6()"                                        
+                                    >                                          
+                                      EN
+                                    </div>
+                                </div>
+                                <p id="c7" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Critically Endangered</p>
+                                <div class="circ">
+                                    <div
+                                      class="conservationStatusTitle circletext"
+                                      style="font-weight: 700;"  
+                                      onclick="button7()"                                          
+                                    >                                          
+                                      CR
+                                    </div>
+                                </div>
+                                <p id="c8" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 270px;color: white;">Extinct in the Wild</p>
+                                <div class="circ">
+                                    <div
+                                      class="conservationStatusTitle circletext"
+                                      style="font-weight: 700;"
+                                      onclick="button8()"                                            
+                                    >                                          
+                                      EW
+                                    </div>
+                                </div>
+                                <p id="c9" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 370px;color: white;">Extinct</p>
+                                <div class="circ">
+                                    <div
+                                      class="conservationStatusTitle circletext"
+                                      style="font-weight: 700;"
+                                      onclick="button9()"                                            
+                                    >                                          
+                                      EX
+                                    </div>
+                                </div>
+                        </th>
                         </tr>
                       </thead>
                     </table>
@@ -348,10 +366,110 @@
   </center>
     </div>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
+      function button1(){
+    document.getElementById("c1").style.visibility='visible';
+    document.getElementById("c2").style.visibility='hidden';
+    document.getElementById("c3").style.visibility='hidden';
+    document.getElementById("c4").style.visibility='hidden';
+    document.getElementById("c5").style.visibility='hidden';
+    document.getElementById("c6").style.visibility='hidden';
+    document.getElementById("c7").style.visibility='hidden';
+    document.getElementById("c8").style.visibility='hidden';
+    document.getElementById("c9").style.visibility='hidden';
+  }
+  function button2(){
+    document.getElementById("c1").style.visibility='hidden';
+    document.getElementById("c2").style.visibility='visible';
+    document.getElementById("c3").style.visibility='hidden';
+    document.getElementById("c4").style.visibility='hidden';
+    document.getElementById("c5").style.visibility='hidden';
+    document.getElementById("c6").style.visibility='hidden';
+    document.getElementById("c7").style.visibility='hidden';
+    document.getElementById("c8").style.visibility='hidden';
+    document.getElementById("c9").style.visibility='hidden';
+  }
+  function button3(){
+    document.getElementById("c1").style.visibility='hidden';
+    document.getElementById("c2").style.visibility='hidden';
+    document.getElementById("c3").style.visibility='visible';
+    document.getElementById("c4").style.visibility='hidden';
+    document.getElementById("c5").style.visibility='hidden';
+    document.getElementById("c6").style.visibility='hidden';
+    document.getElementById("c7").style.visibility='hidden';
+    document.getElementById("c8").style.visibility='hidden';
+    document.getElementById("c9").style.visibility='hidden';
+  }
+  function button4(){
+    document.getElementById("c1").style.visibility='hidden';
+    document.getElementById("c2").style.visibility='hidden';
+    document.getElementById("c3").style.visibility='hidden';
+    document.getElementById("c4").style.visibility='visible';
+    document.getElementById("c5").style.visibility='hidden';
+    document.getElementById("c6").style.visibility='hidden';
+    document.getElementById("c7").style.visibility='hidden';
+    document.getElementById("c8").style.visibility='hidden';
+    document.getElementById("c9").style.visibility='hidden';
+  }
+  function button5(){
+    document.getElementById("c1").style.visibility='hidden';
+    document.getElementById("c2").style.visibility='hidden';
+    document.getElementById("c3").style.visibility='hidden';
+    document.getElementById("c4").style.visibility='hidden';
+    document.getElementById("c5").style.visibility='visible';
+    document.getElementById("c6").style.visibility='hidden';
+    document.getElementById("c7").style.visibility='hidden';
+    document.getElementById("c8").style.visibility='hidden';
+    document.getElementById("c9").style.visibility='hidden';
+  }
+  function button6(){
+    document.getElementById("c1").style.visibility='hidden';
+    document.getElementById("c2").style.visibility='hidden';
+    document.getElementById("c3").style.visibility='hidden';
+    document.getElementById("c4").style.visibility='hidden';
+    document.getElementById("c5").style.visibility='hidden';
+    document.getElementById("c6").style.visibility='visible';
+    document.getElementById("c7").style.visibility='hidden';
+    document.getElementById("c8").style.visibility='hidden';
+    document.getElementById("c9").style.visibility='hidden';
+  }
+  function button7(){
+    document.getElementById("c1").style.visibility='hidden';
+    document.getElementById("c2").style.visibility='hidden';
+    document.getElementById("c3").style.visibility='hidden';
+    document.getElementById("c4").style.visibility='hidden';
+    document.getElementById("c5").style.visibility='hidden';
+    document.getElementById("c6").style.visibility='hidden';
+    document.getElementById("c7").style.visibility='visible';
+    document.getElementById("c8").style.visibility='hidden';
+    document.getElementById("c9").style.visibility='hidden';
+  }
+  function button8(){
+    document.getElementById("c1").style.visibility='hidden';
+    document.getElementById("c2").style.visibility='hidden';
+    document.getElementById("c3").style.visibility='hidden';
+    document.getElementById("c4").style.visibility='hidden';
+    document.getElementById("c5").style.visibility='hidden';
+    document.getElementById("c6").style.visibility='hidden';
+    document.getElementById("c7").style.visibility='hidden';
+    document.getElementById("c8").style.visibility='visible';
+    document.getElementById("c9").style.visibility='hidden';
+  }
+  function button9(){
+    document.getElementById("c1").style.visibility='hidden';
+    document.getElementById("c2").style.visibility='hidden';
+    document.getElementById("c3").style.visibility='hidden';
+    document.getElementById("c4").style.visibility='hidden';
+    document.getElementById("c5").style.visibility='hidden';
+    document.getElementById("c6").style.visibility='hidden';
+    document.getElementById("c7").style.visibility='hidden';
+    document.getElementById("c8").style.visibility='hidden';
+    document.getElementById("c9").style.visibility='visible';
+  }
+
       var swipe = new Swiper(".mySwiper", {
         pagination: {
           el: ".swiper-pagination",
@@ -364,6 +482,12 @@
           document.getElementById("bullet1").className = "image-gallery-bullet active";
           document.getElementById("bullet2").className = "image-gallery-bullet ";
           document.getElementById("bullet3").className = "image-gallery-bullet ";
+
+
+          document.getElementById("thumb1").className = "image-gallery-thumbnail active";
+          document.getElementById("thumb2").className = "image-gallery-thumbnail ";
+          document.getElementById("thumb3").className = "image-gallery-thumbnail ";
+
           // let v = document.getElementById("bullet1");
           //   v.className += "active";
           console.log("IM ON SECOND SLIDE!");
@@ -373,6 +497,11 @@
           document.getElementById("bullet2").className = "image-gallery-bullet active";
           document.getElementById("bullet3").className = "image-gallery-bullet ";
 
+
+          document.getElementById("thumb1").className = "image-gallery-thumbnail ";
+          document.getElementById("thumb2").className = "image-gallery-thumbnail active";
+          document.getElementById("thumb3").className = "image-gallery-thumbnail ";
+          
           // let v = document.getElementById("bullet2");
           //   v.className += "active";
           console.log("IM ON SECOND SLIDE!");
@@ -383,6 +512,11 @@
           document.getElementById("bullet1").className = "image-gallery-bullet ";
           document.getElementById("bullet2").className = "image-gallery-bullet ";
           document.getElementById("bullet3").className = "image-gallery-bullet active";
+
+          document.getElementById("thumb1").className = "image-gallery-thumbnail ";
+          document.getElementById("thumb2").className = "image-gallery-thumbnail ";
+          document.getElementById("thumb3").className = "image-gallery-thumbnail active";
+          
           console.log("IM ON SECOND SLIDE!");
         }
       });
