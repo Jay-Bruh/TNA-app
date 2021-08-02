@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/offline.css">
+    <style>
+      .swiper-container {
+        width: 550px;
+        height: 300px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: transparent;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="backToHome">
+          <div style="display: flex; justify-content: space-between">
+            <a
+              class="urlNoDecoration"
+              href="../index.html"
+              style="
+                padding-left: 40px;
+                padding-right: 80px;
+                padding-bottom: 40px;
+              "
+              }}
+            >
+              <img
+                style="margin-top: 20px"
+                class="styles.homebtn"
+                src="../assets/icons/HomeIcon.svg"
+                
+              />
+            </a>
+            &nbsp;
+            <div
+              class="roundedCornersBox"
+              style="margin-top: 20px; max-height: 65px"
+            >
+              <a class="urlNoDecoration" href="#"
+                ><span class="engname">العربية</span></a
+              >
+              <!-- &nbsp;<span className={styles.barcolor}>|</span>            &nbsp;
+                  <a className={styles.urlNoDecoration} href={arabicUrl}><span className={styles.arname}>العربية</span> </a> -->
+            </div>
+          </div>
+        </header>
+
+        <div class="extraspace"></div>
+        <center>
+        <div>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="../assets/images/Bicolour Angelfish.png" style="width: 500px; height: 280px;margin-top: -30px;"></div>
+              <div class="swiper-slide"><img src="../assets/images/Emperor Angelfish.png" style="width: 500px; height: 280px;margin-top: -30px;"></div>
+              <div class="swiper-slide"><img src="../assets/images/Bluering Angelfish.png" style="width: 450px; height: 270px;margin-top: -30px;"></div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+            <!-- <img src="Bicolour Angelfish.png" style="width: 550px; height: 300px;margin-top: -30px;"> -->
+            <div class="image-gallery-content bottom">
+                <div class="image-gallery-bullets" style="padding-top: 50px; position: relative;">
+                <div class="image-gallery-bullets-container" id="bullets">
+                    <button type="button" class="image-gallery-bullet active"></button>
+                    <button type="button" class="image-gallery-bullet "></button>
+                    <button type="button" class="image-gallery-bullet "></button>
+                </div>
+            </div>
+        </div>
+            <div class="image-gallery-thumbnails-wrapper bottom">
+                <div class="image-gallery-thumbnails">
+                    <div class="image-gallery-thumbnails-container" style="-webkit-transform:translate3d(0px, 0, 0);-moz-transform:translate3d(0px, 0, 0);-ms-transform:translate3d(0px, 0, 0);-o-transform:translate3d(0px, 0, 0);transform:translate3d(0px, 0, 0)">
+                        <button type="button" class="image-gallery-thumbnail active" style="width: 150px;height: 90px;">
+                            <a href="angelfish.html">
+                            <div class="image-gallery-thumbnail-inner">
+                                <img class="image-gallery-thumbnail-image" src="../assets/images/Bicolour Angelfish.png">
+                            </div>
+                        </a>
+                        </button>
+                        <button type="button" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+                            <!-- <a href="angelfish2.html"> -->
+                            <div class="image-gallery-thumbnail-inner">
+                                <img class="image-gallery-thumbnail-image" src="../assets/images/Emperor Angelfish.png">
+                            </div>
+                        <!-- </a> -->
+                        </button>
+                        <button type="button" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+                            <a href="angelfish3.html">
+                            <div class="image-gallery-thumbnail-inner">
+                                <img class="image-gallery-thumbnail-image" src="../assets/images/Bluering Angelfish.png">
+                            </div>
+                        </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div style="font-size: 80px; font-weight: bold; color: white;line-height: 0.5; padding-top: 50px;">ANGELFISH</div>
+            <div class="extraspace"></div>
+            
+            <table width="100%" className="postdetails">
+                <thead>
+                  <tr>                    
+                      <th
+                        class="postDetailsHeaderEN"
+                        style="padding-bottom: 5px; width: 40%;"
+                      >
+                        Scientific Name
+                        <div class="underlinepg2 extrabottomspace"></div>
+                      </th>
+                   
+                      <th
+                        class="postDetailsHeaderEN"
+                        style="padding-bottom: 5px"
+                      >
+                      Diet
+                        <div class="underlinepg2 extrabottomspace"></div>
+                      </th>
+                    
+                      <th
+                      class="postDetailsHeaderEN"
+                      style="padding-bottom: 5px;width: 30%;"
+                      >
+                        Max Size
+                        <div class="underlinepg2 extrabottomspace"></div>
+                      </th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="height: 30px" ></tr>
+                  <tr>
+                    
+                      <td class="postDetailsHeaderEN notbold">
+                        
+                        <img
+                            className="postDetailsHeaderImageEN"
+                            src="../assets/icons/ScientificNameIcon.svg"
+
+                        />
+                        <div style="position: absolute; padding-left: 70px;margin-top: -50px;">Pomacanthidae</div>
+                      </td>
+                    
+                    
+                      <td class="postDetailsHeaderEN notbold">
+                        
+                        <img
+                            className="postDetailsHeaderImageEN"
+                            src="../assets/icons/DietIcon.svg"
+                        />
+                        <div style="position: absolute; padding-left: 70px;margin-top: -40px;">Omnivores</div>
+                      </td>
+                    
+                      <td class="postDetailsHeaderEN notbold">
+                        
+                        <img
+                            className="postDetailsHeaderImageEN"
+                            src="../assets/icons/MaxSizeIcon.svg"
+                        />
+                        <div style="position: absolute; padding-left: 70px;margin-top: -40px;">15-60cm</div>
+                      </td>
+                    
+                  </tr>
+                </tbody>
+              </table>
+              <div class="extraspacepg1"></div>
+              <div class="funFactsBox" style="max-height: 325px; align-self: center;">
+                <div class="funFactsTitle" style="float: left;">
+                  FUN FACTS
+                </div>
+                <div class="underlinepg2" style="padding-top:30px;float: left;position: absolute;"></div>
+                <div class="extraspacepg1"></div>
+                <div
+                  class="funFactsText"
+                  style=" height: 225px; overflow: auto; float: left; text-align: left;" 
+                >
+                  <ul>
+                      <li>There are 86 species of Marine Angelfish, that should not be confused with the freshwater angelfish, which inhabit the Amazon River basin.</li>
+                      <li>Emperor Angelfish changes color; the differences between juveniles and adults are so broad that it was thought to be two different species for a long time. As adults, both sex change color during mating season.</li>
+                        <li>Angelfish are omnivorous, but their favorite food is sponges and alae.</li>
+                      
+                    </ul>
+                </div>
+              </div>
+              
+              <table style="width: 100%;">
+                <tr>
+                    <td style="width: 50%;">
+                        <div class="conservationTitle" style="padding-left:20px;position: absolute;">Conservation Status</div>
+                        <div class="underlinepg2" style="padding-top:45px;float: left;position: absolute;margin-left: 20px;"></div>
+
+                        <table class="circletable" style="padding-top:50px;">
+                            <thead>
+                              <tr>
+                                <th class="conservationStatusTH" style="display: flex;flex-direction: row;">
+                                    <div class="circ ">
+                                        <div
+                                          class="conservationStatusTitle circletext"
+                                          style="font-weight: 700;"                                           
+                                        >                                          
+                                          NE
+                                        </div>
+                                    </div>
+                                    <div class="circ">
+                                        <div
+                                          class="conservationStatusTitle circletext"
+                                          style="font-weight: 700;"                                           
+                                        >                                          
+                                          DD
+                                        </div>
+                                    </div>
+                                    <div class="circ circ-on">
+                                        <div
+                                          class="conservationStatusTitle circletext"
+                                          style="font-weight: 700;"                                           
+                                        >                                          
+                                          LC
+                                        </div>
+                                    </div>
+                                    <div class="circ">
+                                        <div
+                                          class="conservationStatusTitle circletext"
+                                          style="font-weight: 700;"                                           
+                                        >                                          
+                                          NT
+                                        </div>
+                                    </div>
+                                    <div class="circ">
+                                        <div
+                                          class="conservationStatusTitle circletext"
+                                          style="font-weight: 700;"                                           
+                                        >                                          
+                                          VU
+                                        </div>
+                                    </div>
+                                    <div class="circ">
+                                        <div
+                                          class="conservationStatusTitle circletext"
+                                          style="font-weight: 700;"                                           
+                                        >                                          
+                                          EN
+                                        </div>
+                                    </div>
+                                    <div class="circ">
+                                        <div
+                                          class="conservationStatusTitle circletext"
+                                          style="font-weight: 700;"                                           
+                                        >                                          
+                                          CR
+                                        </div>
+                                    </div>
+                                    <div class="circ">
+                                        <div
+                                          class="conservationStatusTitle circletext"
+                                          style="font-weight: 700;"                                           
+                                        >                                          
+                                          EW
+                                        </div>
+                                    </div>
+                                    <div class="circ">
+                                        <div
+                                          class="conservationStatusTitle circletext"
+                                          style="font-weight: 700;"                                           
+                                        >                                          
+                                          EX
+                                        </div>
+                                    </div>
+                            </th>
+                          </tr>
+                        </thead>
+                      </table>
+                    </td>
+                    <td style="width: 50%;">
+                        <div class="conservationTitle" >Geographical Location</div>
+                        <div class="underlinepg2" ></div>
+                        <div class="extraspacepg1"></div>
+                        <img src="../assets/images/Angelfish Map.png" style="padding-top: 50px;">
+                        <figcaption>
+                            <div class="geo">
+                                <div class="col-sm-2" style="padding-top: 13px">
+                                    
+                                    <span>
+                                      <div class="circle"></div>
+                                    </span>
+                                    <p>
+                                      &nbsp;&nbsp;<span class="geotext">Extant (Resident)</span>
+                                    </p>
+                                  </div>
+                                  <div class="location">
+                                    <img
+                                      class="locationpin"
+                                      src="../assets/images/locationpin.png"
+                                      
+                                    />
+                                    <div class=" geotext" style="color: white; max-width: 120px;" >
+                                        Indo-Pacific
+                                    </div>
+                                  </div>
+                            </div>
+                        </figcaption>
+                    </td>
+                </tr>
+              </table>
+              <div style="display: flex; flex-direction: row; width: 100%; justify-content: center;">
+                <div class="arrowback" style="margin-left: 10px;" ><a href="puffer.html"><img src="../assets/images/left-arrow.png" style="width: 30px;padding-top: 10px;"> </a></div>
+                
+                <div class="arrowback" style="margin-left: 10px;" ><a href="sweetlips.html"><img src="../assets/images/right-arrow.png" style="width: 30px;padding-top: 10px;"> </a></div>
+            </div>
+        </div>
+    </center>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swipe = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+
+      var swiper = new Swiper('.swiper-container');
+      swiper.on('slideChange', function () {
+        if(this.activeIndex === 1) {
+          console.log("IM ON SECOND SLIDE!");
+        }
+      });
+
+      var header = document.getElementById("bullets");
+      var btns = header.getElementsByClassName("image-gallery-bullet");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+        });
+      }
+    </script>
+</body>
+</html>
