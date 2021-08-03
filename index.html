@@ -4,10 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="css/offline.css" />
+    <link
+      rel="stylesheet"
+      href="assets/swiper/swiper-bundle.min.css"
+    />
+    <style>
+      .swiper-container {
+        width: 550px;
+        height: 300px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: transparent;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Document</title>
   </head>
   <body>
+    <div id="main">
     <div class="container">
       <header class="backToHome">
         <div style="display: flex; justify-content: space-between">
@@ -29,16 +66,15 @@
             />
           </a>
           &nbsp;
-          <div
+          <!-- <div
             class="roundedCornersBox"
             style="margin-top: 20px; max-height: 65px"
           >
             <a class="urlNoDecoration" href="screens/indexAR.html"
               ><span class="engname">العربية</span></a
             >
-            <!-- &nbsp;<span className={styles.barcolor}>|</span>            &nbsp;
-                <a className={styles.urlNoDecoration} href={arabicUrl}><span className={styles.arname}>العربية</span> </a> -->
-          </div>
+            
+          </div> -->
         </div>
       </header>
 
@@ -46,24 +82,25 @@
       <div class="screentitle">Great Barrier Reef</div>
       <div class="underlinetitle"></div>
       <div class="extraspace"></div>
-
-      <table>
+    </div>
+      <table style="width: 100%;">
         <tr>
           <td>
-            <a style="text-decoration: none; font-weight: bold; color:
-            white" replace="true" href="screens/azure.html">
+            <div style="text-decoration: none; font-weight: bold; color:
+            white" replace="true" onclick="azureDisplay()">
             <img
               src="assets/images/Azure Damsel.png"
               class="fishimg"
+              style="margin-left: 50px;"
             />
-            <div className="firstname" style="font-size: 45px; font-weight: 500; line-height: 0.5; padding-top: 20px;">AZURE </div>
-            <div className="firstname" style="font-size: 55px;">DAMSEL </div>
+            <div className="firstname" style="font-size: 45px; font-weight: 500;margin-left: 50px; line-height: 0.5; padding-top: 20px;">AZURE </div>
+            <div className="firstname" style="font-size: 55px;margin-left: 50px;">DAMSEL </div>
             </div>
             </a>
           </td>
-          <td style="padding-left: 100px;">
-            <a style="text-decoration: none; font-weight: bold; color:
-            white" replace="true" href="screens/threadfin.html">
+          <td >
+            <div style="text-decoration: none; font-weight: bold; color:
+            white" replace="true" onclick="threadfinDisplay()">
             <img
               src="assets/images/Threadfin Cardinalfish.png"
               class="fishimg"
@@ -75,24 +112,24 @@
             />
             <div className="firstname" style="font-size: 45px; font-weight: 500; line-height: 0.5;padding-top: 20px;">TREADFIN </div>
             <div className="firstname" style="font-size: 55px;">CARDINALFISH </div>
-            </a>
+            </div>
           </td>
         </tr>
         <tr style="margin-top: -20px;">
             <td >
-              <a style="text-decoration: none; font-weight: bold; color:
-              white" replace="true" href="screens/triggerfish.html">
+              <div style="text-decoration: none; font-weight: bold; color:
+              white" replace="true" onclick="triggerfishDisplay()">
               <img
                 src="assets/images/Clown Triggerfish.png"
                 class="fishimg"
-                
+                style="margin-left: 50px;"
               />
-              <div className="firstname" style="font-size: 45px; font-weight: 500; line-height: 0.5;padding-top: 20px;">TRIGGERFISH </div>
+              <div className="firstname" style="font-size: 45px;margin-left: 50px; font-weight: 500; line-height: 0.5;padding-top: 20px;">TRIGGERFISH </div>
               
               </div>
-              </a>
+            </div>
             </td>
-            <td style="padding-left: 100px;">
+            <td >
               <a style="text-decoration: none; font-weight: bold; color:
               white" replace="true" href="screens/puffer.html">
               <img
@@ -111,12 +148,13 @@
               <img
                 src="assets/images/Bicolour Angelfish.png"
                 class="fishimg"
+                style="margin-left: 50px;"
               />
-              <div className="firstname" style="font-size: 45px; font-weight: 500; line-height: 0.5;padding-top: 20px;">ANGELFISH </div>
+              <div className="firstname" style="font-size: 45px;margin-left: 50px; font-weight: 500; line-height: 0.5;padding-top: 20px;">ANGELFISH </div>
               </div>
               </a>
             </td>
-            <td style="padding-left: 100px;">
+            <td >
               <a style="text-decoration: none; font-weight: bold; color:
               white" replace="true" href="screens/sweetlips.html">
               <img
@@ -135,13 +173,13 @@
               <img
                 src="assets/images/Humpnose Unicorn.png"
                 class="fishimg"
-                style="height: 150px; margin-top: -40px;"
+                style="height: 150px; margin-top: -40px;margin-left: 50px;"
               />
-              <div className="firstname" style="font-size: 45px; font-weight: 500; line-height: 0.5;padding-top: 20px;">UNICORNFISH </div>
+              <div className="firstname" style="font-size: 45px;margin-left: 50px; font-weight: 500; line-height: 0.5;padding-top: 20px;">UNICORNFISH </div>
               </div>
               </a>
             </td>
-            <td style="padding-left: 100px;">
+            <td >
               <a style="text-decoration: none; font-weight: bold; color:
               white" replace="true" href="screens/surgeon.html">
               <img
@@ -155,7 +193,880 @@
             </td>
           </tr>
       </table>
-    </div>
+    
     <footer class="rightsRecievedDiv">© 2021 National Aquarium. All rights reserved</footer>
+  </div>
+
+  <!-- AZURE -->
+
+  <div class="container" id="azureMain" style="display: none;">
+    <header class="backToHome">
+      <div style="display: flex; justify-content: space-between">
+        <a
+          class="urlNoDecoration"
+          href="../index.html"
+          style="
+            padding-left: 40px;
+            padding-right: 80px;
+            padding-bottom: 40px;
+          "
+          }}
+        >
+          <img
+            style="margin-top: 20px"
+            class="styles.homebtn"
+            src="../assets/icons/HomeIcon.svg"
+            
+          />
+        </a>
+        &nbsp;
+        <div
+          class="roundedCornersBox"
+          style="margin-top: 20px; max-height: 65px"
+        >
+          <a class="urlNoDecoration" href="../screens/azure.html"
+            ><span class="engname">العربية</span></a
+          >
+          <!-- &nbsp;<span className={styles.barcolor}>|</span>            &nbsp;
+              <a className={styles.urlNoDecoration} href={arabicUrl}><span className={styles.arname}>العربية</span> </a> -->
+        </div>
+      </div>
+    </header>
+    <div class="extraspace"></div>
+    <center>
+    <div>
+        <img src="../assets/images/Azure Damsel.png" style="width: 520px; height: 270px;">
+        <p class="ptag" >AZURE</p>
+        <p class="ptag" line-height: 0;>DAMSEL</p>
+        </div>
+        <div class="extraspace"></div>
+        <table width="100%" className="postdetails">
+            <thead>
+                <tr> 
+                    <th
+                    class="postDetailsHeaderEN"
+                    style="padding-bottom: 5px; width: 40%;"
+                  >
+                    Scientific Name
+                    <div class="underlinepg2 extrabottomspace"></div>
+                  </th>
+               
+                  <th
+                    class="postDetailsHeaderEN"
+                    style="padding-bottom: 5px"
+                  >
+                  Diet
+                    <div class="underlinepg2 extrabottomspace"></div>
+                  </th>
+                
+                  <th
+                  class="postDetailsHeaderEN"
+                  style="padding-bottom: 5px;width: 30%;"
+                  >
+                    Max Size
+                    <div class="underlinepg2 extrabottomspace"></div>
+                  </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="height: 30px" ></tr>
+                        <tr>
+                            <td class="postDetailsHeaderEN notbold">
+                    
+                                <img
+                                    className="postDetailsHeaderImageEN"
+                                    src="../assets/icons/ScientificNameIcon.svg"
+        
+                                />
+                                <div style="position: absolute; padding-left: 70px;margin-top: -50px;">Chrysiptera</div>
+                                <div style="position: absolute; padding-left: 70px;margin-top: -15px;">hemicyanea</div> 
+                              </td>
+
+                              <td class="postDetailsHeaderEN notbold">
+                    
+                                <img
+                                    className="postDetailsHeaderImageEN"
+                                    src="../assets/icons/DietIcon.svg"
+                                />
+                                <div style="position: absolute; padding-left: 70px;margin-top: -40px;">Omnivore</div>
+                              </td>
+                            
+                              <td class="postDetailsHeaderEN notbold">
+                                
+                                <img
+                                    className="postDetailsHeaderImageEN"
+                                    src="../assets/icons/MaxSizeIcon.svg"
+                                />
+                                <div style="position: absolute; padding-left: 70px;margin-top: -40px;">7cm</div>
+                              </td>
+                            </tr>
+        </table>
+
+        <div class="extraspacepg1"></div>
+          <div class="funFactsBox" style="max-height: 325px; align-self: center">
+            <div class="funFactsTitle" style="float: left;">
+              FUN FACTS
+            </div>
+            <div class="underlinepg2" style="padding-top:33px;float: left;position: absolute;"></div>
+            <div class="extraspacepg1"></div>
+            <div
+              class="funFactsText"
+              style=" height: 225; overflow: auto; float: left; text-align: left;" 
+            >
+              <ul>
+                  <li>The Males are in charge of taking care of the eggs, guarding them, and aerating them.  The population can double in 15 months.</li>
+                  <li>Although native to the eastern Indian Ocean and Western Pacific, it has been recently found in the central .*Mediterranean around Sicily and Malta. This specie inhabits in Coral Reefs, and depend on their structures for protection from predators.</li>
+              
+                </ul>
+            </div>
+          </div>
+
+          <table style="width: 100%;">
+            <tr>
+                <td style="width: 50%;">
+                    <p style="position: relative;padding-left: 20px; color: white; padding-top: 80px;font-style: normal;
+                    font-weight: 500;
+                    font-size: 32px;">Conservation Status</p>
+                    <!-- <div class="conservationTitle" style="padding-left:20px;position: absolute;">Conservation Status</div> -->
+                    <div class="underlinepg2" style="float: left;position: absolute;margin-left: 20px;margin-top: -30px;"></div>
+                    <table class="circletable" style="padding-top:50px;">
+                        <thead>
+                          <tr>
+                            <th class="conservationStatusTH" style="display: flex;flex-direction: row;">
+                              <p id="c1" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: -30px;color: white;">Near Extinction</p>
+                                <div class="circ circ-on">
+                                    <div
+                                      class="conservationStatusTitle circletext"
+                                      style="font-weight: 700;"  
+                                      onclick="button1()"                                         
+                                    >                                          
+                                      NE
+                                    </div>
+                                </div>
+                                <p id="c2" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 10px;color: white;">Data Deficient</p>
+                                <div class="circ">
+                                    <div
+                                      class="conservationStatusTitle circletext"
+                                      style="font-weight: 700;" 
+                                      onclick="button2()"                                           
+                                    >                                          
+                                      DD
+                                    </div>
+                                </div>
+                                <p id="c3" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 50px;color: white;">Least Concern</p>
+                                <div class="circ">
+                                    <div
+                                      class="conservationStatusTitle circletext"
+                                      style="font-weight: 700;" 
+                                      onclick="button3()"                                           
+                                    >                                          
+                                      LC
+                                    </div>
+                                </div>
+                                <p id="c4" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 90px;color: white;">Near Threatend</p>
+                                <div class="circ">
+                                    <div
+                                      class="conservationStatusTitle circletext"
+                                      style="font-weight: 700;"  
+                                      onclick="button4()"                                          
+                                    >                                          
+                                      NT
+                                    </div>
+                                </div>
+                                <p id="c5" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 170px;color: white;">Vulnerable</p>
+                                <div class="circ">
+                                    <div
+                                      class="conservationStatusTitle circletext"
+                                      style="font-weight: 700;"  
+                                      onclick="button5()"                                          
+                                    >                                          
+                                      VU
+                                    </div>
+                                </div>
+                                <p id="c6" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Endangered</p>
+                                <div class="circ">
+                                    <div
+                                      class="conservationStatusTitle circletext"
+                                      style="font-weight: 700;"    
+                                      onclick="button6()"                                        
+                                    >                                          
+                                      EN
+                                    </div>
+                                </div>
+                                <p id="c7" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Critically Endangered</p>
+                                <div class="circ">
+                                    <div
+                                      class="conservationStatusTitle circletext"
+                                      style="font-weight: 700;"  
+                                      onclick="button7()"                                          
+                                    >                                          
+                                      CR
+                                    </div>
+                                </div>
+                                <p id="c8" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 270px;color: white;">Extinct in the Wild</p>
+                                <div class="circ">
+                                    <div
+                                      class="conservationStatusTitle circletext"
+                                      style="font-weight: 700;"
+                                      onclick="button8()"                                            
+                                    >                                          
+                                      EW
+                                    </div>
+                                </div>
+                                <p id="c9" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 370px;color: white;">Extinct</p>
+                                <div class="circ">
+                                    <div
+                                      class="conservationStatusTitle circletext"
+                                      style="font-weight: 700;"
+                                      onclick="button9()"                                            
+                                    >                                          
+                                      EX
+                                    </div>
+                                </div>
+                        </th>
+                              </tr>
+                              </thead>
+                              </table>    
+                
+                </td>
+                <td style="width: 50%;">
+                    <div class="conservationTitle">Geographical Location</div>
+                    <div class="underlinepg2" ></div>
+                    <div class="extraspacepg1"></div>
+                    <img src="../assets/images/Azure Damsel Map.png" style="padding-top: 50px;">
+                    <figcaption>
+                        <div class="geo">
+                            <div class="col-sm-2" style="padding-top: 13px">
+                                
+                                <span>
+                                  <div class="circle"></div>
+                                </span>
+                                <p>
+                                  &nbsp;&nbsp;<span class="geotext">Extant (Resident)</span>
+                                </p>
+                              </div>
+                              <div class="location">
+                                <img
+                                  class="locationpin"
+                                  src="../assets/images/locationpin.png"
+                                  
+                                />
+                                <div class=" geotext" style="color: white" >
+                                    Indo-West Pacific
+                                </div>
+                              </div>
+                        </div>
+                    </figcaption>
+                </td>
+                    </tr>
+                    </table>
+                    <div style="display: flex; flex-direction: row; width: 100%; justify-content: center;">
+            
+                        <div class="arrowback" style="margin-left: 10px;" ><a href="threadfin.html"><img src="../assets/images/right-arrow.png" style="width: 30px;padding-top: 10px;"> </a></div>
+                    </div>
+</div>
+</center>
+</div>
+
+<!-- THREADFIN -->
+
+<div class="container" id="threadfinMain" style="display: none;">
+  <header class="backToHome">
+      <div style="width: 100%;">
+          <a href="../index.html">
+          <img src="../assets/icons/HomeIcon.svg" style="padding: 15px;">
+      </a>
+          <div
+      class="roundedCornersBox"
+      style="margin-top: 20px; max-height: 65px; float: right;"
+    >
+    <a class="urlNoDecoration" href="../screens/threadfinAR.html"
+        ><span class="engname">العربية</span></a
+      >
+      </div>
+        </div>
+  </header>
+
+  <div class="extraspace"></div>
+  <center>
+  <div>
+      <img src="../assets/images/Threadfin Cardinalfish.png" style="width: 450px; height: 300px;">
+      <p class="ptag" >THREADFIN</p>
+      <p class="ptag" line-height: 0;>CARDINALFISH</p>
+      </div>
+      <div class="extraspace"></div>
+      <table width="100%" className="postdetails">
+          <thead>
+              <tr> 
+                  <th
+                  class="postDetailsHeaderEN"
+                  style="padding-bottom: 5px; width: 40%;"
+                >
+                  Scientific Name
+                  <div class="underlinepg2 extrabottomspace"></div>
+                </th>
+             
+                <th
+                  class="postDetailsHeaderEN"
+                  style="padding-bottom: 5px"
+                >
+                Diet
+                  <div class="underlinepg2 extrabottomspace"></div>
+                </th>
+              
+                <th
+                class="postDetailsHeaderEN"
+                style="padding-bottom: 5px;width: 30%;"
+                >
+                  Max Size
+                  <div class="underlinepg2 extrabottomspace"></div>
+                </th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                      <tr style="height: 30px" ></tr>
+                      <tr>
+                          <td class="postDetailsHeaderEN notbold">
+                  
+                              <img
+                                  className="postDetailsHeaderImageEN"
+                                  src="../assets/icons/ScientificNameIcon.svg"
+      
+                              />
+                              <div style="position: absolute; padding-left: 70px;margin-top: -50px;">Zoramia</div>
+                              <div style="position: absolute; padding-left: 70px;margin-top: -15px;">leptacantha</div> 
+                            </td>
+
+                            <td class="postDetailsHeaderEN notbold">
+                  
+                              <img
+                                  className="postDetailsHeaderImageEN"
+                                  src="../assets/icons/DietIcon.svg"
+                              />
+                              <div style="position: absolute; padding-left: 70px;margin-top: -40px;">Omnivore</div>
+                            </td>
+                          
+                            <td class="postDetailsHeaderEN notbold">
+                              
+                              <img
+                                  className="postDetailsHeaderImageEN"
+                                  src="../assets/icons/MaxSizeIcon.svg"
+                              />
+                              <div style="position: absolute; padding-left: 70px;margin-top: -40px;">7cm</div>
+                            </td>
+                          </tr>
+      </table>
+
+      <div class="extraspacepg1"></div>
+        <div class="funFactsBox" style="max-height: 325px; align-self: center">
+          <div class="funFactsTitle" style="float: left;">
+            FUN FACTS
+          </div>
+          <div class="underlinepg2" style="padding-top:33px;float: left;position: absolute;"></div>
+          <div class="extraspacepg1"></div>
+          <div
+            class="funFactsText"
+            style=" height: 225; overflow: auto; float: left; text-align: left;" 
+          >
+            <ul>
+              <li>The Threadfin Cardinalfish is very small and transparent-like in color, nocturnal, and very shy. It often hides among branching corals.</li>
+              <li>Males carry the fertilized eggs in the mouth until these are ready to hatch.</li>
+            
+              </ul>
+          </div>
+        </div>
+
+        <table style="width: 100%;">
+          <tr>
+              <td style="width: 50%;">
+                  <p style="position: relative;padding-left: 20px; color: white; padding-top: 80px;font-style: normal;
+                  font-weight: 500;
+                  font-size: 32px;">Conservation Status</p>
+                  <!-- <div class="conservationTitle" style="padding-left:20px;position: absolute;">Conservation Status</div> -->
+                  <div class="underlinepg2" style="float: left;position: absolute;margin-left: 20px;margin-top: -30px;"></div>
+                  <table class="circletable" style="padding-top:50px;">
+                      <thead>
+                        <tr>
+                          <th class="conservationStatusTH" style="display: flex;flex-direction: row;">
+                            <p id="c1" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: -30px;color: white;">Near Extinction</p>
+                            <div class="circ circ-on">
+                                <div
+                                  class="conservationStatusTitle circletext"
+                                  style="font-weight: 700;"  
+                                  onclick="button1()"                                         
+                                >                                          
+                                  NE
+                                </div>
+                            </div>
+                            <p id="c2" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 10px;color: white;">Data Deficient</p>
+                            <div class="circ">
+                                <div
+                                  class="conservationStatusTitle circletext"
+                                  style="font-weight: 700;" 
+                                  onclick="button2()"                                           
+                                >                                          
+                                  DD
+                                </div>
+                            </div>
+                            <p id="c3" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 50px;color: white;">Least Concern</p>
+                            <div class="circ">
+                                <div
+                                  class="conservationStatusTitle circletext"
+                                  style="font-weight: 700;" 
+                                  onclick="button3()"                                           
+                                >                                          
+                                  LC
+                                </div>
+                            </div>
+                            <p id="c4" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 90px;color: white;">Near Threatend</p>
+                            <div class="circ">
+                                <div
+                                  class="conservationStatusTitle circletext"
+                                  style="font-weight: 700;"  
+                                  onclick="button4()"                                          
+                                >                                          
+                                  NT
+                                </div>
+                            </div>
+                            <p id="c5" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 170px;color: white;">Vulnerable</p>
+                            <div class="circ">
+                                <div
+                                  class="conservationStatusTitle circletext"
+                                  style="font-weight: 700;"  
+                                  onclick="button5()"                                          
+                                >                                          
+                                  VU
+                                </div>
+                            </div>
+                            <p id="c6" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Endangered</p>
+                            <div class="circ">
+                                <div
+                                  class="conservationStatusTitle circletext"
+                                  style="font-weight: 700;"    
+                                  onclick="button6()"                                        
+                                >                                          
+                                  EN
+                                </div>
+                            </div>
+                            <p id="c7" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Critically Endangered</p>
+                            <div class="circ">
+                                <div
+                                  class="conservationStatusTitle circletext"
+                                  style="font-weight: 700;"  
+                                  onclick="button7()"                                          
+                                >                                          
+                                  CR
+                                </div>
+                            </div>
+                            <p id="c8" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 270px;color: white;">Extinct in the Wild</p>
+                            <div class="circ">
+                                <div
+                                  class="conservationStatusTitle circletext"
+                                  style="font-weight: 700;"
+                                  onclick="button8()"                                            
+                                >                                          
+                                  EW
+                                </div>
+                            </div>
+                            <p id="c9" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 370px;color: white;">Extinct</p>
+                            <div class="circ">
+                                <div
+                                  class="conservationStatusTitle circletext"
+                                  style="font-weight: 700;"
+                                  onclick="button9()"                                            
+                                >                                          
+                                  EX
+                                </div>
+                            </div>
+                    </th>
+                            </tr>
+                            </thead>
+                            </table>    
+              
+              </td>
+              <td style="width: 50%;">
+                  <div class="conservationTitle">Geographical Location</div>
+                  <div class="underlinepg2" ></div>
+                  <div class="extraspacepg1"></div>
+                  <img src="../assets/images/Threadfin CardinalfishMap.png" style="padding-top: 50px;">
+                  <figcaption>
+                      <div class="geo">
+                          <div class="col-sm-2" style="padding-top: 13px">
+                              
+                              <span>
+                                <div class="circle"></div>
+                              </span>
+                              <p>
+                                &nbsp;&nbsp;<span class="geotext">Extant (Resident)</span>
+                              </p>
+                            </div>
+                            <div class="location">
+                              <img
+                                class="locationpin"
+                                src="../assets/images/locationpin.png"
+                                
+                              />
+                              <div class=" geotext" style="color: white" >
+                                Indo-Pacific
+                              </div>
+                            </div>
+                      </div>
+                  </figcaption>
+              </td>
+                  </tr>
+                  </table>
+                  <div style="display: flex; flex-direction: row; width: 100%; justify-content: center;">
+                    <div class="arrowback" style="margin-left: 10px;" ><a href="../screens/azure.html"><img src="../assets/images/left-arrow.png" style="width: 30px;padding-top: 10px;"> </a></div>
+                      <div class="arrowback" style="margin-left: 10px;" ><a href="../screens/triggerfish.html"><img src="../assets/images/right-arrow.png" style="width: 30px;padding-top: 10px;"> </a></div>
+                  </div>
+</div>
+</center>
+</div>
+
+<!-- TRIGGERFISH -->
+
+<div class="container" id="triggerfishMain" style="display: none;">
+  <header class="backToHome">
+    <div style="display: flex; justify-content: space-between">
+      <a
+        class="urlNoDecoration"
+        href="../index.html"
+        style="
+          padding-left: 40px;
+          padding-right: 80px;
+          padding-bottom: 40px;
+        "
+        }}
+      >
+        <img
+          style="margin-top: 20px"
+          class="styles.homebtn"
+          src="../assets/icons/HomeIcon.svg"
+          
+        />
+      </a>
+      &nbsp;
+      <div
+        class="roundedCornersBox"
+        style="margin-top: 20px; max-height: 65px"
+      >
+        <a class="urlNoDecoration" href="../screens/triggerfishAR.html"
+          ><span class="engname">العربية</span></a
+        >
+        <!-- &nbsp;<span className={styles.barcolor}>|</span>            &nbsp;
+            <a className={styles.urlNoDecoration} href={arabicUrl}><span className={styles.arname}>العربية</span> </a> -->
+      </div>
+    </div>
+  </header>
+
+  <center>
+  <div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="../assets/images/Clown Triggerfish.png" style="width: 500px; height: 280px;margin-top: -30px;"></div>
+        <div class="swiper-slide"><img src="../assets/images/Redtooth Triggertish.png" style="width: 500px; height: 280px;margin-top: -30px;"></div>
+        <div class="swiper-slide"><img src="../assets/images/Orange Line Triggerfish.png" style="width: 450px; height: 270px;margin-top: -30px;"></div>
+        <div class="swiper-slide"><img src="../assets/images/Picasso Triggerfish.png" style="height: 270px;margin-top: -30px;"></div>
+      </div>
+      <!-- <div class="swiper-pagination"></div> -->
+    </div>
+      <!-- <img src="Bicolour Angelfish.png" style="width: 550px; height: 300px;margin-top: -30px;"> -->
+      <div class="image-gallery-content bottom">
+          <div class="image-gallery-bullets" style="padding-top: 50px; position: relative;">
+          <div class="image-gallery-bullets-container" id="bullets">
+            <button type="button" id="bullet1" class="image-gallery-bullet active"></button>
+            <button type="button" id="bullet2" class="image-gallery-bullet "></button>
+            <button type="button" id="bullet3" class="image-gallery-bullet "></button>
+            <button type="button" id="bullet4" class="image-gallery-bullet "></button>
+
+          </div>
+      </div>
+  </div>
+      <div class="image-gallery-thumbnails-wrapper bottom">
+          <div class="image-gallery-thumbnails">
+              <div class="image-gallery-thumbnails-container" style="-webkit-transform:translate3d(0px, 0, 0);-moz-transform:translate3d(0px, 0, 0);-ms-transform:translate3d(0px, 0, 0);-o-transform:translate3d(0px, 0, 0);transform:translate3d(0px, 0, 0)">
+                <button type="button" id="thumb1" class="image-gallery-thumbnail active" style="width: 150px;height: 90px;">
+                  
+                  <div class="image-gallery-thumbnail-inner">
+                      <img class="image-gallery-thumbnail-image" src="../assets/images/Clown Triggerfish.png">
+                  </div>
+                  
+              </button>
+              <button type="button" id="thumb2" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+                  
+                  <div class="image-gallery-thumbnail-inner">
+                      <img class="image-gallery-thumbnail-image" src="../assets/images/Redtooth Triggertish.png">
+                  </div>
+                  
+              </button>
+              <button type="button" id="thumb3" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+                  
+                  <div class="image-gallery-thumbnail-inner">
+                      <img class="image-gallery-thumbnail-image" src="../assets/images/Orange Line Triggerfish.png">
+                  </div>
+                  
+              </button>
+              <button type="button" id="thumb4" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+                  
+                  <div class="image-gallery-thumbnail-inner">
+                      <img class="image-gallery-thumbnail-image" src="../assets/images/Picasso Triggerfish.png">
+                  </div>
+                  
+              </button>
+              </div>
+          </div>
+      </div>
+      <p class="ptag" id="fname">TRIGGERFISH</p>
+      <div class="extraspace"></div>
+      
+      <table width="100%" className="postdetails">
+          <thead>
+            <tr>                    
+                <th
+                  class="postDetailsHeaderEN"
+                  style="padding-bottom: 5px; width: 40%;"
+                >
+                  Scientific Name
+                  <div class="underlinepg2 extrabottomspace"></div>
+                </th>
+             
+                <th
+                  class="postDetailsHeaderEN"
+                  style="padding-bottom: 5px"
+                >
+                Diet
+                  <div class="underlinepg2 extrabottomspace"></div>
+                </th>
+              
+                <th
+                class="postDetailsHeaderEN"
+                style="padding-bottom: 5px;width: 30%;"
+                >
+                  Max Size
+                  <div class="underlinepg2 extrabottomspace"></div>
+                </th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="height: 30px" ></tr>
+            <tr>
+              
+                <td class="postDetailsHeaderEN notbold">
+                  
+                  <img
+                      className="postDetailsHeaderImageEN"
+                      src="../assets/icons/ScientificNameIcon.svg"
+
+                  />
+                  <div style="position: absolute; padding-left: 70px;margin-top: -50px;">Balistidae</div>
+                </td>
+              
+              
+                <td class="postDetailsHeaderEN notbold">
+                  
+                  <img
+                      className="postDetailsHeaderImageEN"
+                      src="../assets/icons/DietIcon.svg"
+                  />
+                  <div style="position: absolute; padding-left: 70px;margin-top: -40px;">Carnivores</div>
+                </td>
+              
+                <td class="postDetailsHeaderEN notbold">
+                  
+                  <img
+                      className="postDetailsHeaderImageEN"
+                      src="../assets/icons/MaxSizeIcon.svg"
+                  />
+                  <div style="position: absolute; padding-left: 70px;margin-top: -40px;">20-100cm</div>
+                </td>
+              
+            </tr>
+          </tbody>
+        </table>
+        <div class="extraspacepg1"></div>
+        <div class="funFactsBox" style="max-height: 325px; align-self: center">
+          <div class="funFactsTitle" style="float: left;">
+            FUN FACTS
+          </div>
+          <div class="underlinepg2" style="padding-top:33px;float: left;position: absolute;"></div>
+          <div class="extraspacepg1"></div>
+          <div
+            class="funFactsText"
+            style=" height: 225; overflow: auto; float: left; text-align: left;" 
+          >
+            <ul>
+                <li>This group of fish receives that name because of the ""trigger"" mechanism used to extend the dorsal fins and lock themselves into crevices.</li>
+                <li>Triggerfishes have powerful jaws that allow them to crack even the thickest shells.</li>
+                  <li>Triggerfish can rotate each of its eyeballs independently.</li>
+              </ul>
+          </div>
+        </div>
+        
+        <table style="width: 100%;">
+          <tr>
+              <td style="width: 50%;">
+                <p style="position: relative;padding-left: 20px; color: white; padding-top: 80px;font-style: normal;
+                font-weight: 500;
+                font-size: 32px;">Conservation Status</p>
+                  <div class="underlinepg2" style="float: left;position: absolute;margin-left: 20px;margin-top: -30px;"></div>
+
+                  <table class="circletable" style="padding-top:50px;">
+                      <thead>
+                        <tr>
+                          <th class="conservationStatusTH" style="display: flex;flex-direction: row;">
+                            <p id="c1" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: -30px;color: white;">Near Extinction</p>
+                            <div class="circ circ-on">
+                                <div
+                                  class="conservationStatusTitle circletext"
+                                  style="font-weight: 700;"  
+                                  onclick="button1()"                                         
+                                >                                          
+                                  NE
+                                </div>
+                            </div>
+                            <p id="c2" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 10px;color: white;">Data Deficient</p>
+                            <div class="circ">
+                                <div
+                                  class="conservationStatusTitle circletext"
+                                  style="font-weight: 700;" 
+                                  onclick="button2()"                                           
+                                >                                          
+                                  DD
+                                </div>
+                            </div>
+                            <p id="c3" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 50px;color: white;">Least Concern</p>
+                            <div class="circ">
+                                <div
+                                  class="conservationStatusTitle circletext"
+                                  style="font-weight: 700;" 
+                                  onclick="button3()"                                           
+                                >                                          
+                                  LC
+                                </div>
+                            </div>
+                            <p id="c4" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 90px;color: white;">Near Threatend</p>
+                            <div class="circ">
+                                <div
+                                  class="conservationStatusTitle circletext"
+                                  style="font-weight: 700;"  
+                                  onclick="button4()"                                          
+                                >                                          
+                                  NT
+                                </div>
+                            </div>
+                            <p id="c5" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 170px;color: white;">Vulnerable</p>
+                            <div class="circ">
+                                <div
+                                  class="conservationStatusTitle circletext"
+                                  style="font-weight: 700;"  
+                                  onclick="button5()"                                          
+                                >                                          
+                                  VU
+                                </div>
+                            </div>
+                            <p id="c6" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Endangered</p>
+                            <div class="circ">
+                                <div
+                                  class="conservationStatusTitle circletext"
+                                  style="font-weight: 700;"    
+                                  onclick="button6()"                                        
+                                >                                          
+                                  EN
+                                </div>
+                            </div>
+                            <p id="c7" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Critically Endangered</p>
+                            <div class="circ">
+                                <div
+                                  class="conservationStatusTitle circletext"
+                                  style="font-weight: 700;"  
+                                  onclick="button7()"                                          
+                                >                                          
+                                  CR
+                                </div>
+                            </div>
+                            <p id="c8" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 270px;color: white;">Extinct in the Wild</p>
+                            <div class="circ">
+                                <div
+                                  class="conservationStatusTitle circletext"
+                                  style="font-weight: 700;"
+                                  onclick="button8()"                                            
+                                >                                          
+                                  EW
+                                </div>
+                            </div>
+                            <p id="c9" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 370px;color: white;">Extinct</p>
+                            <div class="circ">
+                                <div
+                                  class="conservationStatusTitle circletext"
+                                  style="font-weight: 700;"
+                                  onclick="button9()"                                            
+                                >                                          
+                                  EX
+                                </div>
+                            </div>
+                    </th>
+                    </tr>
+                  </thead>
+                </table>
+              </td>
+              <td style="width: 50%;">
+                  <div class="conservationTitle" >Geographical Location</div>
+                  <div class="underlinepg2" ></div>
+                  <div class="extraspacepg1"></div>
+                  <img src="../assets/images/Triggerfish Map.png" style="padding-top: 50px;">
+                  <figcaption>
+                      <div class="geo">
+                          <div class="col-sm-2" style="padding-top: 13px">
+                              
+                              <span>
+                                <div class="circle"></div>
+                              </span>
+                              <p>
+                                &nbsp;&nbsp;<span class="geotext">Extant (Resident)</span>
+                              </p>
+                            </div>
+                            <div class="location">
+                              <img
+                                class="locationpin"
+                                src="../assets/images/locationpin.png"
+                                
+                              />
+                              <div class=" geotext" style="color: white; max-width: 120px;" >
+                                  Global Tropical & Sub tropical
+                              </div>
+                            </div>
+                      </div>
+                  </figcaption>
+              </td>
+          </tr>
+        </table>
+        <div style="display: flex; flex-direction: row; width: 100%; justify-content: center;">
+          <div class="arrowback" style="margin-left: 10px;" ><a href="threadfin.html"><img src="../assets/images/left-arrow.png" style="width: 30px;padding-top: 10px;"> </a></div>
+          
+          <div class="arrowback" style="margin-left: 10px;" ><a href="puffer.html"><img src="../assets/images/right-arrow.png" style="width: 30px;padding-top: 10px;"> </a></div>
+      </div>
+  </div>
+</center>
+</div>
+
+<script src="assets/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+      function azureDisplay(){
+        document.getElementById("main").style.display = "none";
+        document.getElementById("azureMain").style.display = "block";
+      }
+
+      function threadfinDisplay(){
+        document.getElementById("main").style.display = "none";
+        document.getElementById("threadfinMain").style.display = "block";
+      }
+
+      function triggerfishDisplay(){
+        document.getElementById("main").style.display = "none";
+        document.getElementById("triggerfishMain").style.display = "block";
+      }
+  </script>
   </body>
 </html>

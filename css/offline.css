@@ -192,6 +192,33 @@ td {
   padding-right: 0.5rem;
 }
 
+.postDetailsHeaderAR {
+  text-align: right;
+  justify-content: left;
+  font-weight: 500;
+  font-size: 32px;
+  color: #ffffff;
+  line-height: 27px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.tableWidth{
+  width: 30%;
+}
+
+.contentAR{
+  position: absolute;
+  padding-right: 70px;
+  margin-top: -42px;
+}
+
+.contentnextAR{
+  position: absolute;
+  padding-right: 70px;
+  margin-top: -12px;
+}
+
 .extrabottomspace {
   padding-top: 5px;
 }
