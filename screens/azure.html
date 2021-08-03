@@ -11,19 +11,36 @@
 <body>
     <div class="container">
         <header class="backToHome">
-            <div style="width: 100%;">
-                <a href="../index.html">
-                <img src="../assets/icons/HomeIcon.svg" style="padding: 15px;">
-            </a>
-                <div
-            class="roundedCornersBox"
-            style="margin-top: 20px; max-height: 65px; float: right;"
-          >
-          <a class="urlNoDecoration" href="#"
-              ><span class="engname">العربية</span></a
+          <div style="display: flex; justify-content: space-between">
+            <a
+              class="urlNoDecoration"
+              href="../index.html"
+              style="
+                padding-left: 40px;
+                padding-right: 80px;
+                padding-bottom: 40px;
+              "
+              }}
             >
+              <img
+                style="margin-top: 20px"
+                class="styles.homebtn"
+                src="../assets/icons/HomeIcon.svg"
+                
+              />
+            </a>
+            &nbsp;
+            <div
+              class="roundedCornersBox"
+              style="margin-top: 20px; max-height: 65px"
+            >
+              <a class="urlNoDecoration" href="../screens/azure.html"
+                ><span class="engname">العربية</span></a
+              >
+              <!-- &nbsp;<span className={styles.barcolor}>|</span>            &nbsp;
+                  <a className={styles.urlNoDecoration} href={arabicUrl}><span className={styles.arname}>العربية</span> </a> -->
             </div>
-              </div>
+          </div>
         </header>
         <div class="extraspace"></div>
         <center>
