@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
     <link rel="stylesheet" href="css/offline.css" />
+
     <link
       rel="stylesheet"
       href="assets/swiper/swiper-bundle.min.css"
@@ -12,7 +15,12 @@
       .swiper-container {
         width: 550px;
         height: 300px;
-      }
+      }      
+
+      .swiper-container1 {
+        width: 550px;
+        height: 300px;
+      }      
 
       .swiper-slide {
         text-align: center;
@@ -39,8 +47,33 @@
         width: 100%;
         height: 100%;
       }
+
+      .swiper-slide1 {
+        text-align: center;
+        font-size: 18px;
+        background: transparent;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide1 img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
     </style>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Document</title>
   </head>
   <body>
@@ -331,7 +364,7 @@
                         <thead>
                           <tr>
                             <th class="conservationStatusTH" style="display: flex;flex-direction: row;">
-                              <p id="c1" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: -30px;color: white;">Near Extinction</p>
+                              <p id="e1" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: -30px;color: white;">Near Extinction</p>
                                 <div class="circ circ-on">
                                     <div
                                       class="conservationStatusTitle circletext"
@@ -341,7 +374,7 @@
                                       NE
                                     </div>
                                 </div>
-                                <p id="c2" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 10px;color: white;">Data Deficient</p>
+                                <p id="e2" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 10px;color: white;">Data Deficient</p>
                                 <div class="circ">
                                     <div
                                       class="conservationStatusTitle circletext"
@@ -351,7 +384,7 @@
                                       DD
                                     </div>
                                 </div>
-                                <p id="c3" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 50px;color: white;">Least Concern</p>
+                                <p id="e3" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 50px;color: white;">Least Concern</p>
                                 <div class="circ">
                                     <div
                                       class="conservationStatusTitle circletext"
@@ -361,7 +394,7 @@
                                       LC
                                     </div>
                                 </div>
-                                <p id="c4" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 90px;color: white;">Near Threatend</p>
+                                <p id="e4" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 90px;color: white;">Near Threatend</p>
                                 <div class="circ">
                                     <div
                                       class="conservationStatusTitle circletext"
@@ -371,7 +404,7 @@
                                       NT
                                     </div>
                                 </div>
-                                <p id="c5" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 170px;color: white;">Vulnerable</p>
+                                <p id="e5" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 170px;color: white;">Vulnerable</p>
                                 <div class="circ">
                                     <div
                                       class="conservationStatusTitle circletext"
@@ -381,7 +414,7 @@
                                       VU
                                     </div>
                                 </div>
-                                <p id="c6" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Endangered</p>
+                                <p id="e6" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Endangered</p>
                                 <div class="circ">
                                     <div
                                       class="conservationStatusTitle circletext"
@@ -391,7 +424,7 @@
                                       EN
                                     </div>
                                 </div>
-                                <p id="c7" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Critically Endangered</p>
+                                <p id="e7" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Critically Endangered</p>
                                 <div class="circ">
                                     <div
                                       class="conservationStatusTitle circletext"
@@ -401,7 +434,7 @@
                                       CR
                                     </div>
                                 </div>
-                                <p id="c8" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 270px;color: white;">Extinct in the Wild</p>
+                                <p id="e8" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 270px;color: white;">Extinct in the Wild</p>
                                 <div class="circ">
                                     <div
                                       class="conservationStatusTitle circletext"
@@ -411,7 +444,7 @@
                                       EW
                                     </div>
                                 </div>
-                                <p id="c9" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 370px;color: white;">Extinct</p>
+                                <p id="e9" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 370px;color: white;">Extinct</p>
                                 <div class="circ">
                                     <div
                                       class="conservationStatusTitle circletext"
@@ -757,23 +790,23 @@
 
   <center>
   <div>
-    <div class="swiper-container">
+    <!-- <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="assets/images/Clown Triggerfish.png" style="width: 500px; height: 280px;margin-top: -30px;"></div>
         <div class="swiper-slide"><img src="assets/images/Redtooth Triggertish.png" style="width: 500px; height: 280px;margin-top: -30px;"></div>
         <div class="swiper-slide"><img src="assets/images/Orange Line Triggerfish.png" style="width: 450px; height: 270px;margin-top: -30px;"></div>
         <div class="swiper-slide"><img src="assets/images/Picasso Triggerfish.png" style="height: 270px;margin-top: -30px;"></div>
-      </div>
+      </div> -->
       <!-- <div class="swiper-pagination"></div> -->
-    </div>
-      <!-- <img src="Bicolour Angelfish.png" style="width: 550px; height: 300px;margin-top: -30px;"> -->
+    <!-- </div> -->
+      <img src="assets/images/Clown Triggerfish.png" id="triggerImage" style="width: 550px; height: 300px;margin-top: -30px;">
       <div class="image-gallery-content bottom">
           <div class="image-gallery-bullets" style="padding-top: 50px; position: relative;">
           <div class="image-gallery-bullets-container" id="bullets">
-            <button type="button" id="bullet1" class="image-gallery-bullet active"></button>
-            <button type="button" id="bullet2" class="image-gallery-bullet "></button>
-            <button type="button" id="bullet3" class="image-gallery-bullet "></button>
-            <button type="button" id="bullet4" class="image-gallery-bullet "></button>
+            <button type="button" id="bullet1" onclick="trigger1()" class="image-gallery-bullet active"></button>
+            <button type="button" id="bullet2" onclick="trigger2()" class="image-gallery-bullet "></button>
+            <button type="button" id="bullet3" onclick="trigger3()" class="image-gallery-bullet "></button>
+            <button type="button" id="bullet4" onclick="trigger4()" class="image-gallery-bullet "></button>
 
           </div>
       </div>
@@ -781,28 +814,28 @@
       <div class="image-gallery-thumbnails-wrapper bottom">
           <div class="image-gallery-thumbnails">
               <div class="image-gallery-thumbnails-container" style="-webkit-transform:translate3d(0px, 0, 0);-moz-transform:translate3d(0px, 0, 0);-ms-transform:translate3d(0px, 0, 0);-o-transform:translate3d(0px, 0, 0);transform:translate3d(0px, 0, 0)">
-                <button type="button" id="thumb1" class="image-gallery-thumbnail active" style="width: 150px;height: 90px;">
+                <button type="button" onclick="trigger1()" id="thumb1" class="image-gallery-thumbnail active" style="width: 150px;height: 90px;">
                   
                   <div class="image-gallery-thumbnail-inner">
                       <img class="image-gallery-thumbnail-image" src="assets/images/Clown Triggerfish.png">
                   </div>
                   
               </button>
-              <button type="button" id="thumb2" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+              <button type="button" id="thumb2" onclick="trigger2()" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
                   
                   <div class="image-gallery-thumbnail-inner">
                       <img class="image-gallery-thumbnail-image" src="assets/images/Redtooth Triggertish.png">
                   </div>
                   
               </button>
-              <button type="button" id="thumb3" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+              <button type="button" id="thumb3" onclick="trigger3()" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
                   
                   <div class="image-gallery-thumbnail-inner">
                       <img class="image-gallery-thumbnail-image" src="assets/images/Orange Line Triggerfish.png">
                   </div>
                   
               </button>
-              <button type="button" id="thumb4" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+              <button type="button" id="thumb4" onclick="trigger4()" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
                   
                   <div class="image-gallery-thumbnail-inner">
                       <img class="image-gallery-thumbnail-image" src="assets/images/Picasso Triggerfish.png">
@@ -911,7 +944,7 @@
                       <thead>
                         <tr>
                           <th class="conservationStatusTH" style="display: flex;flex-direction: row;">
-                            <p id="c1" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: -30px;color: white;">Near Extinction</p>
+                            <p id="a1" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: -30px;color: white;">Near Extinction</p>
                             <div class="circ circ-on">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -921,7 +954,7 @@
                                   NE
                                 </div>
                             </div>
-                            <p id="c2" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 10px;color: white;">Data Deficient</p>
+                            <p id="a2" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 10px;color: white;">Data Deficient</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -931,7 +964,7 @@
                                   DD
                                 </div>
                             </div>
-                            <p id="c3" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 50px;color: white;">Least Concern</p>
+                            <p id="a3" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 50px;color: white;">Least Concern</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -941,7 +974,7 @@
                                   LC
                                 </div>
                             </div>
-                            <p id="c4" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 90px;color: white;">Near Threatend</p>
+                            <p id="a4" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 90px;color: white;">Near Threatend</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -951,7 +984,7 @@
                                   NT
                                 </div>
                             </div>
-                            <p id="c5" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 170px;color: white;">Vulnerable</p>
+                            <p id="a5" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 170px;color: white;">Vulnerable</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -961,7 +994,7 @@
                                   VU
                                 </div>
                             </div>
-                            <p id="c6" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Endangered</p>
+                            <p id="a6" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Endangered</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -971,7 +1004,7 @@
                                   EN
                                 </div>
                             </div>
-                            <p id="c7" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Critically Endangered</p>
+                            <p id="a7" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Critically Endangered</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -981,7 +1014,7 @@
                                   CR
                                 </div>
                             </div>
-                            <p id="c8" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 270px;color: white;">Extinct in the Wild</p>
+                            <p id="a8" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 270px;color: white;">Extinct in the Wild</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -991,7 +1024,7 @@
                                   EW
                                 </div>
                             </div>
-                            <p id="c9" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 370px;color: white;">Extinct</p>
+                            <p id="a9" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 370px;color: white;">Extinct</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -1082,43 +1115,43 @@
 
   <center>
   <div>
-    <div class="swiper-container" style="margin-top:-20px">
+    <!-- <div class="swiper-container" style="margin-top:-20px">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="assets/images/Dog Face Puffer.png" style="width: 500px; height: 280px;margin-top: -30px;"></div>
         <div class="swiper-slide"><img src="assets/images/Guineafowl Puffer.png" style="width: 500px; height: 280px;margin-top: -30px;"></div>
         <div class="swiper-slide"><img src="assets/images/Starry Puffer.png" style="width: 450px; height: 270px;margin-top: -30px;"></div>
         
-      </div>
+      </div> -->
       <!-- <div class="swiper-pagination"></div> -->
-    </div>
-      <!-- <img src="Bicolour Angelfish.png" style="width: 550px; height: 300px;margin-top: -30px;"> -->
+    <!-- </div> -->
+      <img src="assets/images/Dog Face Puffer.png" id="pufferImage" style="width: 550px; height: 300px;margin-top: -30px;">
       <div class="image-gallery-content bottom">
         <div class="image-gallery-bullets" style="padding-top: 50px; position: relative;">
         <div class="image-gallery-bullets-container">
-          <button type="button" id="bullet1" class="image-gallery-bullet active"></button>
-          <button type="button" id="bullet2" class="image-gallery-bullet "></button>
-          <button type="button" id="bullet3" class="image-gallery-bullet "></button>
+          <button type="button" id="bulletPuffer1" onclick="puffer1()" class="image-gallery-bullet active"></button>
+          <button type="button" id="bulletPuffer2" onclick="puffer2()" class="image-gallery-bullet "></button>
+          <button type="button" id="bulletPuffer3" onclick="puffer3()" class="image-gallery-bullet "></button>
         </div>
     </div>
 </div>
     <div class="image-gallery-thumbnails-wrapper bottom">
         <div class="image-gallery-thumbnails">
             <div class="image-gallery-thumbnails-container" style="-webkit-transform:translate3d(0px, 0, 0);-moz-transform:translate3d(0px, 0, 0);-ms-transform:translate3d(0px, 0, 0);-o-transform:translate3d(0px, 0, 0);transform:translate3d(0px, 0, 0)">
-                <button type="button" id="thumb1" class="image-gallery-thumbnail active" style="width: 150px;height: 90px;">
+                <button type="button" id="thumbPuffer1" onclick="puffer1()" class="image-gallery-thumbnail active" style="width: 150px;height: 90px;">
 
                     <div class="image-gallery-thumbnail-inner">
-                        <img class="image-gallery-thumbnail-image" src="assets/images/Clown Triggerfish.png">
+                        <img class="image-gallery-thumbnail-image" src="assets/images/Dog Face Puffer.png">
                     </div>
              
                 </button>
-                <button type="button" id="thumb2" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+                <button type="button" id="thumbPuffer2" onclick="puffer2()" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
              
                     <div class="image-gallery-thumbnail-inner">
                         <img class="image-gallery-thumbnail-image" src="assets/images/Guineafowl Puffer.png">
                     </div>
              
                 </button>
-                <button type="button" id="thumb3" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+                <button type="button" id="thumbPuffer3" onclick="puffer3()" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
             
                     <div class="image-gallery-thumbnail-inner">
                         <img class="image-gallery-thumbnail-image" src="assets/images/Starry Puffer.png">
@@ -1229,7 +1262,7 @@
                     <thead>
                       <tr>
                         <th class="conservationStatusTH" style="display: flex;flex-direction: row;">
-                          <p id="c1" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: -30px;color: white;">Near Extinction</p>
+                          <p id="h1" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: -30px;color: white;">Near Extinction</p>
                           <div class="circ circ-on">
                               <div
                                 class="conservationStatusTitle circletext"
@@ -1239,7 +1272,7 @@
                                 NE
                               </div>
                           </div>
-                          <p id="c2" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 10px;color: white;">Data Deficient</p>
+                          <p id="h2" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 10px;color: white;">Data Deficient</p>
                           <div class="circ">
                               <div
                                 class="conservationStatusTitle circletext"
@@ -1249,7 +1282,7 @@
                                 DD
                               </div>
                           </div>
-                          <p id="c3" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 50px;color: white;">Least Concern</p>
+                          <p id="h3" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 50px;color: white;">Least Concern</p>
                           <div class="circ">
                               <div
                                 class="conservationStatusTitle circletext"
@@ -1259,7 +1292,7 @@
                                 LC
                               </div>
                           </div>
-                          <p id="c4" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 90px;color: white;">Near Threatend</p>
+                          <p id="h4" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 90px;color: white;">Near Threatend</p>
                           <div class="circ">
                               <div
                                 class="conservationStatusTitle circletext"
@@ -1269,7 +1302,7 @@
                                 NT
                               </div>
                           </div>
-                          <p id="c5" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 170px;color: white;">Vulnerable</p>
+                          <p id="h5" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 170px;color: white;">Vulnerable</p>
                           <div class="circ">
                               <div
                                 class="conservationStatusTitle circletext"
@@ -1279,7 +1312,7 @@
                                 VU
                               </div>
                           </div>
-                          <p id="c6" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Endangered</p>
+                          <p id="h6" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Endangered</p>
                           <div class="circ">
                               <div
                                 class="conservationStatusTitle circletext"
@@ -1289,7 +1322,7 @@
                                 EN
                               </div>
                           </div>
-                          <p id="c7" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Critically Endangered</p>
+                          <p id="h7" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Critically Endangered</p>
                           <div class="circ">
                               <div
                                 class="conservationStatusTitle circletext"
@@ -1299,7 +1332,7 @@
                                 CR
                               </div>
                           </div>
-                          <p id="c8" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 270px;color: white;">Extinct in the Wild</p>
+                          <p id="h8" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 270px;color: white;">Extinct in the Wild</p>
                           <div class="circ">
                               <div
                                 class="conservationStatusTitle circletext"
@@ -1309,7 +1342,7 @@
                                 EW
                               </div>
                           </div>
-                          <p id="c9" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 370px;color: white;">Extinct</p>
+                          <p id="h9" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 370px;color: white;">Extinct</p>
                           <div class="circ">
                               <div
                                 class="conservationStatusTitle circletext"
@@ -1400,42 +1433,42 @@
 
   <center>
   <div>
-    <div class="swiper-container">
+    <!-- <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="assets/images/Bicolour Angelfish.png" style="width: 500px; height: 280px;margin-top: -30px;"></div>
         <div class="swiper-slide"><img src="assets/images/Emperor Angelfish.png" style="width: 500px; height: 280px;margin-top: -30px;"></div>
         <div class="swiper-slide"><img src="assets/images/Bluering Angelfish.png" style="width: 450px; height: 270px;margin-top: -30px;"></div>
-      </div>
+      </div> -->
       <!-- <div class="swiper-pagination"></div> -->
-    </div>
-      <!-- <img src="Bicolour Angelfish.png" style="width: 550px; height: 300px;margin-top: -30px;"> -->
+    <!-- </div> -->
+      <img src="assets/images/Bicolour Angelfish.png" id="angelImage" style="width: 550px; height: 300px;margin-top: -30px;">
       <div class="image-gallery-content bottom">
           <div class="image-gallery-bullets" style="padding-top: 50px; position: relative;">
           <div class="image-gallery-bullets-container" id="bullets">
-            <button type="button" id="bullet1" class="image-gallery-bullet active"></button>
-            <button type="button" id="bullet2" class="image-gallery-bullet "></button>
-            <button type="button" id="bullet3" class="image-gallery-bullet "></button>
+            <button type="button" onclick="angel1()" id="bulletAngel1" class="image-gallery-bullet active"></button>
+            <button type="button" onclick="angel2()" id="bulletAngel2" class="image-gallery-bullet "></button>
+            <button type="button" onclick="angel3()" id="bulletAngel3" class="image-gallery-bullet "></button>
           </div>
       </div>
   </div>
       <div class="image-gallery-thumbnails-wrapper bottom">
           <div class="image-gallery-thumbnails">
               <div class="image-gallery-thumbnails-container" style="-webkit-transform:translate3d(0px, 0, 0);-moz-transform:translate3d(0px, 0, 0);-ms-transform:translate3d(0px, 0, 0);-o-transform:translate3d(0px, 0, 0);transform:translate3d(0px, 0, 0)">
-                  <button type="button" id="thumb1" class="image-gallery-thumbnail active" style="width: 150px;height: 90px;">
+                  <button type="button" onclick="angel1()" id="thumbAngel1" class="image-gallery-thumbnail active" style="width: 150px;height: 90px;">
                       
                       <div class="image-gallery-thumbnail-inner">
                           <img class="image-gallery-thumbnail-image" src="assets/images/Bicolour Angelfish.png">
                       </div>
                 
                   </button>
-                  <button type="button" id="thumb2" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+                  <button type="button" onclick="angel2()" id="thumbAngel2" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
                       <!-- <a href="angelfish2.html"> -->
                       <div class="image-gallery-thumbnail-inner">
                           <img class="image-gallery-thumbnail-image" src="assets/images/Emperor Angelfish.png">
                       </div>
                   <!-- </a> -->
                   </button>
-                  <button type="button" id="thumb3" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+                  <button type="button" onclick="angel3()" id="thumbAngel3" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
                      
                       <div class="image-gallery-thumbnail-inner">
                           <img class="image-gallery-thumbnail-image" src="assets/images/Bluering Angelfish.png">
@@ -1543,7 +1576,7 @@
                       <thead>
                         <tr>
                           <th class="conservationStatusTH" style="display: flex;flex-direction: row;">
-                            <p id="c1" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: -30px;color: white;">Near Extinction</p>
+                            <p id="d1" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: -30px;color: white;">Near Extinction</p>
                             <div class="circ ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -1553,7 +1586,7 @@
                                   NE
                                 </div>
                             </div>
-                            <p id="c2" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 10px;color: white;">Data Deficient</p>
+                            <p id="d2" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 10px;color: white;">Data Deficient</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -1563,7 +1596,7 @@
                                   DD
                                 </div>
                             </div>
-                            <p id="c3" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 50px;color: white;">Least Concern</p>
+                            <p id="d3" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 50px;color: white;">Least Concern</p>
                             <div class="circ circ-on">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -1573,7 +1606,7 @@
                                   LC
                                 </div>
                             </div>
-                            <p id="c4" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 90px;color: white;">Near Threatend</p>
+                            <p id="d4" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 90px;color: white;">Near Threatend</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -1583,7 +1616,7 @@
                                   NT
                                 </div>
                             </div>
-                            <p id="c5" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 170px;color: white;">Vulnerable</p>
+                            <p id="d5" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 170px;color: white;">Vulnerable</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -1593,7 +1626,7 @@
                                   VU
                                 </div>
                             </div>
-                            <p id="c6" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Endangered</p>
+                            <p id="d6" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Endangered</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -1603,7 +1636,7 @@
                                   EN
                                 </div>
                             </div>
-                            <p id="c7" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Critically Endangered</p>
+                            <p id="d7" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Critically Endangered</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -1613,7 +1646,7 @@
                                   CR
                                 </div>
                             </div>
-                            <p id="c8" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 270px;color: white;">Extinct in the Wild</p>
+                            <p id="d8" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 270px;color: white;">Extinct in the Wild</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -1623,7 +1656,7 @@
                                   EW
                                 </div>
                             </div>
-                            <p id="c9" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 370px;color: white;">Extinct</p>
+                            <p id="d9" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 370px;color: white;">Extinct</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -1714,41 +1747,43 @@
 
   <center>
   <div>
-    <div class="swiper-container" style="margin-top:-20px">
+    <!-- <div class="swiper-container" style="margin-top:-20px">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="assets/images/Harlequin Sweetlips.png" style="width: 500px; height: 250px;margin-top: -30px;"></div>
         <div class="swiper-slide"><img src="assets/images/Oriental Sweetlips.png" style="width: 500px; height: 280px;margin-top: -30px;"></div>
         <div class="swiper-slide"><img src="assets/images/Yellow-banded Sweetlips.png" style="height: 270px;margin-top: -30px;"></div>
-        </div>
+        </div> -->
       <!-- <div class="swiper-pagination"></div> -->
-    </div>
+    <!-- </div> -->
+    <img src="assets/images/Harlequin Sweetlips.png" id="sweetlipsImage" style="width: 550px; height: 300px;margin-top: -30px;">
+
       <div class="image-gallery-content bottom">
           <div class="image-gallery-bullets" style="padding-top: 50px; position: relative;">
           <div class="image-gallery-bullets-container">
-            <button type="button" id="bullet1" class="image-gallery-bullet active"></button>
-            <button type="button" id="bullet2" class="image-gallery-bullet "></button>
-            <button type="button" id="bullet3" class="image-gallery-bullet "></button>
+            <button type="button" id="bulletSweetlips1" onclick="sweetlips1()" class="image-gallery-bullet active"></button>
+            <button type="button" id="bulletSweetlips2" onclick="sweetlips2()" class="image-gallery-bullet "></button>
+            <button type="button" id="bulletSweetlips3" onclick="sweetlips3()" class="image-gallery-bullet "></button>
           </div>
       </div>
   </div>
       <div class="image-gallery-thumbnails-wrapper bottom">
           <div class="image-gallery-thumbnails">
               <div class="image-gallery-thumbnails-container" style="-webkit-transform:translate3d(0px, 0, 0);-moz-transform:translate3d(0px, 0, 0);-ms-transform:translate3d(0px, 0, 0);-o-transform:translate3d(0px, 0, 0);transform:translate3d(0px, 0, 0)">
-                  <button type="button" id="thumb1" class="image-gallery-thumbnail active" style="width: 150px;height: 90px;">
+                  <button type="button" id="thumbSweetlips1" onclick="sweetlips1()" class="image-gallery-thumbnail active" style="width: 150px;height: 90px;">
                       
                       <div class="image-gallery-thumbnail-inner">
                           <img class="image-gallery-thumbnail-image" src="assets/images/Harlequin Sweetlips.png">
                       </div>
                      
                   </button>
-                  <button type="button" id="thumb2" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+                  <button type="button" id="thumbSweetlips2" onclick="sweetlips2()" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
                       
                       <div class="image-gallery-thumbnail-inner">
                           <img class="image-gallery-thumbnail-image" src="assets/images/Oriental Sweetlips.png">
                       </div>
                      
                   </button>
-                  <button type="button" id="thumb3" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+                  <button type="button" id="thumbSweetlips3" onclick="sweetlips3()" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
                       
                       <div class="image-gallery-thumbnail-inner">
                           <img class="image-gallery-thumbnail-image" src="assets/images/Yellow-banded Sweetlips.png">
@@ -1859,7 +1894,7 @@
                       <thead>
                         <tr>
                           <th class="conservationStatusTH" style="display: flex;flex-direction: row;">
-                            <p id="c1" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: -30px;color: white;">Near Extinction</p>
+                            <p id="b1" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: -30px;color: white;">Near Extinction</p>
                             <div class="circ circ-on">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -1869,7 +1904,7 @@
                                   NE
                                 </div>
                             </div>
-                            <p id="c2" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 10px;color: white;">Data Deficient</p>
+                            <p id="b2" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 10px;color: white;">Data Deficient</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -1879,7 +1914,7 @@
                                   DD
                                 </div>
                             </div>
-                            <p id="c3" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 50px;color: white;">Least Concern</p>
+                            <p id="b3" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 50px;color: white;">Least Concern</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -1889,7 +1924,7 @@
                                   LC
                                 </div>
                             </div>
-                            <p id="c4" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 90px;color: white;">Near Threatend</p>
+                            <p id="b4" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 90px;color: white;">Near Threatend</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -1899,7 +1934,7 @@
                                   NT
                                 </div>
                             </div>
-                            <p id="c5" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 170px;color: white;">Vulnerable</p>
+                            <p id="b5" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 170px;color: white;">Vulnerable</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -1909,7 +1944,7 @@
                                   VU
                                 </div>
                             </div>
-                            <p id="c6" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Endangered</p>
+                            <p id="b6" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Endangered</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -1919,7 +1954,7 @@
                                   EN
                                 </div>
                             </div>
-                            <p id="c7" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Critically Endangered</p>
+                            <p id="b7" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Critically Endangered</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -1929,7 +1964,7 @@
                                   CR
                                 </div>
                             </div>
-                            <p id="c8" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 270px;color: white;">Extinct in the Wild</p>
+                            <p id="b8" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 270px;color: white;">Extinct in the Wild</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -1939,7 +1974,7 @@
                                   EW
                                 </div>
                             </div>
-                            <p id="c9" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 370px;color: white;">Extinct</p>
+                            <p id="b9" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 370px;color: white;">Extinct</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -2030,7 +2065,7 @@
 
   <center>
   <div>
-    <div class="swiper-container" style="margin-top:-20px">
+    <!-- <div class="swiper-container" style="margin-top:-20px">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="assets/images/Humpnose Unicorn.png" style="width: 500px; height: 250px;margin-top: -30px;"></div>
         <div class="swiper-slide"><img src="assets/images/Bignose Unicornfish.png" style="height: 260px;margin-top: -30px;"></div>
@@ -2038,45 +2073,45 @@
         <div class="swiper-slide"><img src="assets/images/Humpback Unicornfish.png" style="height: 220px;margin-top: -30px;"></div>
         
         <div class="swiper-slide"><img src="assets/images/Bluespine Unicornfish.png" style="height: 270px;margin-top: -30px;"></div>
-        </div>
+        </div> -->
       <!-- <div class="swiper-pagination"></div> -->
-    </div>
-      <!-- <img src="Humpnose Unicorn.png" style="width: 550px; height: 200px;margin-top: -30px;"> -->
+    <!-- </div> -->
+      <img src="assets/images/Humpnose Unicorn.png" id="unicornImage" style="width: 550px; height: 200px;margin-top: -30px;">
       <div class="image-gallery-content bottom">
           <div class="image-gallery-bullets" style="padding-top: 50px; position: relative;">
           <div class="image-gallery-bullets-container">
-              <button type="button" id="bullet1" class="image-gallery-bullet active"></button>
-              <button type="button" id="bullet2" class="image-gallery-bullet "></button>
-              <button type="button" id="bullet3" class="image-gallery-bullet "></button>
-              <button type="button" id="bullet4" class="image-gallery-bullet "></button>
-              <button type="button" id="bullet5" class="image-gallery-bullet "></button>
+              <button type="button" id="bulletUnicorn1" onclick="unicorn1()" class="image-gallery-bullet active"></button>
+              <button type="button" id="bulletUnicorn2" onclick="unicorn2()" class="image-gallery-bullet "></button>
+              <button type="button" id="bulletUnicorn3" onclick="unicorn3()" class="image-gallery-bullet "></button>
+              <button type="button" id="bulletUnicorn4" onclick="unicorn4()" class="image-gallery-bullet "></button>
+              <button type="button" id="bulletUnicorn5" onclick="unicorn5()" class="image-gallery-bullet "></button>
           </div>
       </div>
   </div>
       <div class="image-gallery-thumbnails-wrapper bottom">
           <div class="image-gallery-thumbnails">
               <div class="image-gallery-thumbnails-container" style="-webkit-transform:translate3d(0px, 0, 0);-moz-transform:translate3d(0px, 0, 0);-ms-transform:translate3d(0px, 0, 0);-o-transform:translate3d(0px, 0, 0);transform:translate3d(0px, 0, 0)">
-                  <button type="button" id="thumb1" class="image-gallery-thumbnail active" style="width: 150px;height: 90px;">
+                  <button type="button" id="thumbUnicorn1" onclick="unicorn1()" class="image-gallery-thumbnail active" style="width: 150px;height: 90px;">
                       <div class="image-gallery-thumbnail-inner">
                           <img class="image-gallery-thumbnail-image" src="assets/images/Humpnose Unicorn.png">
                       </div>
                   </button>
-                  <button type="button" id="thumb2" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+                  <button type="button" id="thumbUnicorn2" onclick="unicorn2()" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
                       <div class="image-gallery-thumbnail-inner">
                           <img class="image-gallery-thumbnail-image" src="assets/images/Bignose Unicornfish.png">
                       </div>
                   </button>
-                  <button type="button" id="thumb3" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+                  <button type="button" id="thumbUnicorn3" onclick="unicorn3()" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
                       <div class="image-gallery-thumbnail-inner">
                           <img class="image-gallery-thumbnail-image" src="assets/images/Orangespine Tang Unicornfish.png">
                       </div>
                   </button>
-                  <button type="button" id="thumb4" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+                  <button type="button" id="thumbUnicorn4" onclick="unicorn4()" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
                       <div class="image-gallery-thumbnail-inner">
                           <img class="image-gallery-thumbnail-image" src="assets/images/Humpback Unicornfish.png">
                       </div>
                   </button>
-                  <button type="button" id="thumb5" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+                  <button type="button" id="thumbUnicorn5" onclick="unicorn5()" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
                       <div class="image-gallery-thumbnail-inner">
                           <img class="image-gallery-thumbnail-image" src="assets/images/Bluespine Unicornfish.png">
                       </div>
@@ -2186,7 +2221,7 @@
                       <thead>
                         <tr>
                           <th class="conservationStatusTH" style="display: flex;flex-direction: row;">
-                            <p id="c1" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: -30px;color: white;">Near Extinction</p>
+                            <p id="g1" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: -30px;color: white;">Near Extinction</p>
                             <div class="circ ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -2196,7 +2231,7 @@
                                   NE
                                 </div>
                             </div>
-                            <p id="c2" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 10px;color: white;">Data Deficient</p>
+                            <p id="g2" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 10px;color: white;">Data Deficient</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -2206,7 +2241,7 @@
                                   DD
                                 </div>
                             </div>
-                            <p id="c3" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 50px;color: white;">Least Concern</p>
+                            <p id="g3" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 50px;color: white;">Least Concern</p>
                             <div class="circ circ-on">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -2216,7 +2251,7 @@
                                   LC
                                 </div>
                             </div>
-                            <p id="c4" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 90px;color: white;">Near Threatend</p>
+                            <p id="g4" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 90px;color: white;">Near Threatend</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -2226,7 +2261,7 @@
                                   NT
                                 </div>
                             </div>
-                            <p id="c5" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 170px;color: white;">Vulnerable</p>
+                            <p id="g5" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 170px;color: white;">Vulnerable</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -2236,7 +2271,7 @@
                                   VU
                                 </div>
                             </div>
-                            <p id="c6" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Endangered</p>
+                            <p id="g6" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Endangered</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -2246,7 +2281,7 @@
                                   EN
                                 </div>
                             </div>
-                            <p id="c7" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Critically Endangered</p>
+                            <p id="g7" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Critically Endangered</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -2256,7 +2291,7 @@
                                   CR
                                 </div>
                             </div>
-                            <p id="c8" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 270px;color: white;">Extinct in the Wild</p>
+                            <p id="g8" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 270px;color: white;">Extinct in the Wild</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -2266,7 +2301,7 @@
                                   EW
                                 </div>
                             </div>
-                            <p id="c9" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 370px;color: white;">Extinct</p>
+                            <p id="g9" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 370px;color: white;">Extinct</p>
                             <div class="circ">
                                 <div
                                   class="conservationStatusTitle circletext"
@@ -2357,7 +2392,7 @@
 
   <center>
   <div>
-    <div class="swiper-container" style="margin-top:-50px">
+    <!-- <div class="swiper-container" style="margin-top:-50px">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="assets/images/Brown Tang.png" style="width: 500px; height: 250px;margin-top: -30px;"></div>
         <div class="swiper-slide"><img src="assets/images/Orange-band Surgeonfish.png" style="width: 500px; height: 280px;margin-top: -30px;"></div>
@@ -2366,61 +2401,61 @@
         <div class="swiper-slide"><img src="assets/images/Sailfin Tang.png" style="width: 450px; height: 270px;margin-top: -30px;"></div>
         <div class="swiper-slide"><img src="assets/images/Elongate Surgeon.png" style="height: 250px;margin-top: -30px;"></div>
         
-      </div>
+      </div> -->
       <!-- <div class="swiper-pagination"></div> -->
-    </div>
-      <!-- <img src="Bicolour Angelfish.png" style="width: 550px; height: 300px;margin-top: -30px;"> -->
+    <!-- </div> -->
+      <img src="assets/images/Brown Tang.png" id="surgeonImage" style="height: 280px;margin-top: -50px;">
       <div class="image-gallery-content bottom">
         <div class="image-gallery-bullets" style="padding-top: 50px; position: relative;">
         <div class="image-gallery-bullets-container">
-            <button type="button" id="bullet1" class="image-gallery-bullet active"></button>
-            <button type="button" id="bullet2" class="image-gallery-bullet "></button>
-            <button type="button" id="bullet3" class="image-gallery-bullet "></button>
-            <button type="button" id="bullet4" class="image-gallery-bullet "></button>
-            <button type="button" id="bullet5" class="image-gallery-bullet "></button>
-            <button type="button" id="bullet6" class="image-gallery-bullet "></button>
+            <button type="button" id="bulletSurgeon1" onclick="surgeon1()" class="image-gallery-bullet active"></button>
+            <button type="button" id="bulletSurgeon2" onclick="surgeon2()" class="image-gallery-bullet "></button>
+            <button type="button" id="bulletSurgeon3" onclick="surgeon3()" class="image-gallery-bullet "></button>
+            <button type="button" id="bulletSurgeon4" onclick="surgeon4()" class="image-gallery-bullet "></button>
+            <button type="button" id="bulletSurgeon5" onclick="surgeon5()" class="image-gallery-bullet "></button>
+            <button type="button" id="bulletSurgeon6" onclick="surgeon6()" class="image-gallery-bullet "></button>
         </div>
     </div>
 </div>
     <div class="image-gallery-thumbnails-wrapper bottom">
         <div class="image-gallery-thumbnails">
             <div class="image-gallery-thumbnails-container" style="-webkit-transform:translate3d(0px, 0, 0);-moz-transform:translate3d(0px, 0, 0);-ms-transform:translate3d(0px, 0, 0);-o-transform:translate3d(0px, 0, 0);transform:translate3d(0px, 0, 0)">
-                <button type="button" id="thumb1" class="image-gallery-thumbnail active" style="width: 150px;height: 90px;">
+                <button type="button" id="thumbSurgeon1" onclick="surgeon1()" class="image-gallery-thumbnail active" style="width: 150px;height: 90px;">
                     
                     <div class="image-gallery-thumbnail-inner">
                         <img class="image-gallery-thumbnail-image" src="assets/images/Brown Tang.png">
                     </div>
                
                 </button>
-                <button type="button" id="thumb2" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+                <button type="button" id="thumbSurgeon2" onclick="surgeon2()" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
                     
                     <div class="image-gallery-thumbnail-inner">
                         <img class="image-gallery-thumbnail-image" src="assets/images/Orange-band Surgeonfish.png">
                     </div>
               
                 </button>
-                <button type="button" id="thumb3" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+                <button type="button" id="thumbSurgeon3" onclick="surgeon3()" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
                    
                     <div class="image-gallery-thumbnail-inner">
                         <img class="image-gallery-thumbnail-image" src="assets/images/Blue Tang.png">
                     </div>
                     
                 </button>
-                <button type="button" id="thumb4" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+                <button type="button" id="thumbSurgeon4" onclick="surgeon4()" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
                   
                     <div class="image-gallery-thumbnail-inner">
                         <img class="image-gallery-thumbnail-image" style="height: 70px;width: 120px;" src="assets/images/Yellow Tang.png">
                     </div>
                 
                 </button>
-                <button type="button" id="thumb5" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+                <button type="button" id="thumbSurgeon5" onclick="surgeon5()" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
                     
                     <div class="image-gallery-thumbnail-inner">
                         <img class="image-gallery-thumbnail-image" style="height: 70px;width: 120px;" src="assets/images/Sailfin Tang.png">
                     </div>
                    
                 </button>
-                <button type="button" id="thumb6" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
+                <button type="button" id="thumbSurgeon6" onclick="surgeon6()" class="image-gallery-thumbnail" style="width: 150px;height: 90px;">
                     
                     <div class="image-gallery-thumbnail-inner">
                         <img class="image-gallery-thumbnail-image" src="assets/images/Elongate Surgeon.png">
@@ -2530,7 +2565,7 @@
                     <thead>
                       <tr>
                         <th class="conservationStatusTH" style="display: flex;flex-direction: row;">
-                          <p id="c1" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: -30px;color: white;">Near Extinction</p>
+                          <p id="i1" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: -30px;color: white;">Near Extinction</p>
                           <div class="circ ">
                               <div
                                 class="conservationStatusTitle circletext"
@@ -2540,7 +2575,7 @@
                                 NE
                               </div>
                           </div>
-                          <p id="c2" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 10px;color: white;">Data Deficient</p>
+                          <p id="i2" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 10px;color: white;">Data Deficient</p>
                           <div class="circ">
                               <div
                                 class="conservationStatusTitle circletext"
@@ -2550,7 +2585,7 @@
                                 DD
                               </div>
                           </div>
-                          <p id="c3" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 50px;color: white;">Least Concern</p>
+                          <p id="i3" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 50px;color: white;">Least Concern</p>
                           <div class="circ circ-on">
                               <div
                                 class="conservationStatusTitle circletext"
@@ -2560,7 +2595,7 @@
                                 LC
                               </div>
                           </div>
-                          <p id="c4" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 90px;color: white;">Near Threatend</p>
+                          <p id="i4" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 90px;color: white;">Near Threatend</p>
                           <div class="circ">
                               <div
                                 class="conservationStatusTitle circletext"
@@ -2570,7 +2605,7 @@
                                 NT
                               </div>
                           </div>
-                          <p id="c5" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 170px;color: white;">Vulnerable</p>
+                          <p id="i5" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 170px;color: white;">Vulnerable</p>
                           <div class="circ">
                               <div
                                 class="conservationStatusTitle circletext"
@@ -2580,7 +2615,7 @@
                                 VU
                               </div>
                           </div>
-                          <p id="c6" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Endangered</p>
+                          <p id="i6" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Endangered</p>
                           <div class="circ">
                               <div
                                 class="conservationStatusTitle circletext"
@@ -2590,7 +2625,7 @@
                                 EN
                               </div>
                           </div>
-                          <p id="c7" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Critically Endangered</p>
+                          <p id="i7" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 210px;color: white;">Critically Endangered</p>
                           <div class="circ">
                               <div
                                 class="conservationStatusTitle circletext"
@@ -2600,7 +2635,7 @@
                                 CR
                               </div>
                           </div>
-                          <p id="c8" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 270px;color: white;">Extinct in the Wild</p>
+                          <p id="i8" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 270px;color: white;">Extinct in the Wild</p>
                           <div class="circ">
                               <div
                                 class="conservationStatusTitle circletext"
@@ -2610,7 +2645,7 @@
                                 EW
                               </div>
                           </div>
-                          <p id="c9" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 370px;color: white;">Extinct</p>
+                          <p id="i9" style="position: absolute; margin-top: -40px; visibility: hidden; margin-left: 370px;color: white;">Extinct</p>
                           <div class="circ">
                               <div
                                 class="conservationStatusTitle circletext"
@@ -2666,161 +2701,8 @@
 
 <script src="assets/swiper/swiper-bundle.min.js"></script>
 
-  <script>
-    //Go to Screens from home
-      function azureDisplay(){
-        document.getElementById("main").style.display = "none";
-        document.getElementById("azureMain").style.display = "block";
-      }
-
-      function threadfinDisplay(){
-        document.getElementById("main").style.display = "none";
-        document.getElementById("threadfinMain").style.display = "block";
-      }
-
-      function triggerfishDisplay(){
-        document.getElementById("main").style.display = "none";
-        document.getElementById("triggerfishMain").style.display = "block";
-      }
-
-      function pufferDisplay(){
-        document.getElementById("main").style.display = "none";
-        document.getElementById("pufferMain").style.display = "block";
-      }
-
-      function angelfishDisplay(){
-        document.getElementById("main").style.display = "none";
-        document.getElementById("angelfishMain").style.display = "block";
-      }
-
-      function sweetlipsDisplay(){
-        document.getElementById("main").style.display = "none";
-        document.getElementById("sweetlipsMain").style.display = "block";
-      }
-
-      function unicornDisplay(){
-        document.getElementById("main").style.display = "none";
-        document.getElementById("unicornMain").style.display = "block";
-      }
-
-      function surgeonDisplay(){
-        document.getElementById("main").style.display = "none";
-        document.getElementById("surgeonMain").style.display = "block";
-      }
-
-      //Back to Home
-
-      function azureHome(){
-        document.getElementById("main").style.display = "block";
-        document.getElementById("azureMain").style.display = "none";
-      }
-
-      function threadfinHome(){
-        document.getElementById("main").style.display = "block";
-        document.getElementById("threadfinMain").style.display = "none";
-      }
-
-      function triggerfishHome(){
-        document.getElementById("main").style.display = "block";
-        document.getElementById("triggerfishMain").style.display = "none";
-      }
-
-      function pufferHome(){
-        document.getElementById("main").style.display = "block";
-        document.getElementById("pufferMain").style.display = "none";
-      }
-
-      function angelfishHome(){
-        document.getElementById("main").style.display = "block";
-        document.getElementById("angelfishMain").style.display = "none";
-      }
-
-      function sweetlipsHome(){
-        document.getElementById("main").style.display = "block";
-        document.getElementById("sweetlipsMain").style.display = "none";
-      }
-
-      function unicornHome(){
-        document.getElementById("main").style.display = "block";
-        document.getElementById("unicornMain").style.display = "none";
-      }
-
-      function surgeonHome(){
-        document.getElementById("main").style.display = "block";
-        document.getElementById("surgeonMain").style.display = "none";
-      }
-
-      //left-arrows
-      function threadfinLeft(){
-        document.getElementById("azureMain").style.display = "block";
-        document.getElementById("threadfinMain").style.display = "none";
-      }
-
-      function triggerfishLeft(){
-        document.getElementById("threadfinMain").style.display = "block";
-        document.getElementById("triggerfishMain").style.display = "none";
-      }
-
-      function pufferLeft(){
-        document.getElementById("triggerfishMain").style.display = "block";
-        document.getElementById("pufferMain").style.display = "none";
-      }
-
-      function angelfishLeft(){
-        document.getElementById("pufferMain").style.display = "block";
-        document.getElementById("angelfishMain").style.display = "none";
-      }
-
-      function sweetlipsLeft(){
-        document.getElementById("angelfishMain").style.display = "block";
-        document.getElementById("sweetlipsMain").style.display = "none";
-      }
-
-      function unicornLeft(){
-        document.getElementById("sweetlipsMain").style.display = "block";
-        document.getElementById("unicornMain").style.display = "none";
-      }
-
-      function surgeonLeft(){
-        document.getElementById("unicornMain").style.display = "block";
-        document.getElementById("surgeonMain").style.display = "none";
-      }
-
-      //right arrows
-      function azureRight(){
-        document.getElementById("threadfinMain").style.display = "block";
-        document.getElementById("azureMain").style.display = "none";
-      }
-
-      function threadfinRight(){
-        document.getElementById("triggerfishMain").style.display = "block";
-        document.getElementById("threadfinMain").style.display = "none";
-      }
-
-      function triggerfishRight(){
-        document.getElementById("pufferMain").style.display = "block";
-        document.getElementById("triggerfishMain").style.display = "none";
-      }
-
-      function pufferRight(){
-        document.getElementById("angelfishMain").style.display = "block";
-        document.getElementById("pufferMain").style.display = "none";
-      }
-
-      function angelfishRight(){
-        document.getElementById("sweetlipsMain").style.display = "block";
-        document.getElementById("angelfishMain").style.display = "none";
-      }
-
-      function sweetlipsRight(){
-        document.getElementById("unicornMain").style.display = "block";
-        document.getElementById("sweetlipsMain").style.display = "none";
-      }
-
-      function unicornRight(){
-        document.getElementById("surgeonMain").style.display = "block";
-        document.getElementById("unicornMain").style.display = "none";
-      }
+  <script src="js/javascript.js">
+    
   </script>
   </body>
 </html>
